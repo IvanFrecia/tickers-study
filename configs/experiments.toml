@@ -1,0 +1,268 @@
+[base]
+config = "configs/tickers.toml"
+artifact_root = "artifacts/experiments"
+
+[[experiments]]
+name = "volatility_signals"
+description = "Augment defaults with volatility and momentum indicators."
+tickers = ["AAPL", "AMZN", "BA", "CVX"]
+score_metric = "MAE"
+[experiments.overrides.defaults.features]
+engineered = [
+  "Daily_Return",
+  "Log_Return",
+  "SMA_10",
+  "SMA_30",
+  "EMA_10",
+  "Volatility_14",
+  "High_Low_Range",
+  "True_Range",
+  "ATR_14",
+  "RSI_14",
+  "MACD_12_26_9",
+  "MACD_SIGNAL_12_26_9",
+  "MACD_HIST_12_26_9",
+  "Volume_Z_30",
+  "Return_5"
+]
+
+[[experiments]]
+name = "compact_model"
+description = "Reduce model capacity with higher dropout for volatile tickers."
+tickers = ["AMZN", "BA"]
+score_metric = "MAE"
+[experiments.overrides.defaults.model]
+lstm_units = [128]
+dropout = 0.3
+epochs = 35
+
+[[experiments]]
+name = "long_window"
+description = "Increase lookback window and adjust backtest step."
+tickers = ["AAPL", "CVX"]
+score_metric = "MAE"
+[experiments.overrides.defaults]
+window_size = 90
+forecast_horizon = 10
+[experiments.overrides.defaults.backtest]
+step = 90
+min_train_points = 700
+
+[[experiments]]
+name = "momentum_focus"
+description = "Momentum-heavy feature mix with multi-horizon returns and oscillators."
+tickers = ["AAPL", "AMZN", "BA", "CVX"]
+score_metric = "MAE"
+[experiments.overrides.defaults.features]
+engineered = [
+  "Daily_Return",
+  "Return_5",
+  "Return_10",
+  "Return_20",
+  "RSI_7",
+  "RSI_14",
+  "SMA_10",
+  "EMA_10",
+  "MACD_12_26_9",
+  "MACD_SIGNAL_12_26_9",
+  "MACD_HIST_12_26_9",
+  "Close_Open_Ratio",
+  "Volume_Z_20"
+]
+
+[[experiments]]
+name = "volume_regime"
+description = "Volume regime detection with deeper network and lower learning rate."
+tickers = ["AMZN", "BA"]
+score_metric = "MAE"
+[experiments.overrides.defaults.features]
+engineered = [
+  "Daily_Return",
+  "Volatility_14",
+  "True_Range",
+  "ATR_14",
+  "Volume_Z_30",
+  "Volume_Z_60",
+  "OBV",
+  "Return_5",
+  "Return_20"
+]
+[experiments.overrides.defaults.model]
+lstm_units = [192, 96]
+dropout = 0.25
+learning_rate = 0.0007
+epochs = 45
+
+[[experiments]]
+name = "long_window_compact"
+description = "Blend long-window features with compact LSTM sizing for AAPL/CVX."
+tickers = ["AAPL", "CVX"]
+score_metric = "MAE"
+[experiments.overrides.defaults]
+window_size = 90
+forecast_horizon = 10
+[experiments.overrides.defaults.model]
+lstm_units = [128]
+dropout = 0.25
+learning_rate = 0.0008
+epochs = 45
+
+[[experiments]]
+name = "long_window_new"
+description = "Extended lookback and horizon for NVDA/GOOG/TSLA/VRT."
+tickers = ["NVDA", "GOOG", "TSLA", "VRT"]
+score_metric = "MAE"
+[experiments.overrides.defaults]
+window_size = 90
+forecast_horizon = 10
+[experiments.overrides.defaults.backtest]
+step = 90
+min_train_points = 700
+
+[[experiments]]
+name = "compact_model_new"
+description = "Reduced-capacity LSTM with higher regularisation for high-volatility names."
+tickers = ["NVDA", "GOOG", "TSLA"]
+score_metric = "MAE"
+[experiments.overrides.defaults.model]
+lstm_units = [128]
+dropout = 0.3
+epochs = 35
+
+[[experiments]]
+name = "volatility_signals_new"
+description = "Augment engineered signals with volatility and volume indicators."
+tickers = ["NVDA", "GOOG", "TSLA", "VRT"]
+score_metric = "MAE"
+[experiments.overrides.defaults.features]
+engineered = [
+  "Daily_Return",
+  "Log_Return",
+  "SMA_10",
+  "SMA_30",
+  "EMA_10",
+  "Volatility_14",
+  "High_Low_Range",
+  "True_Range",
+  "ATR_14",
+  "RSI_14",
+  "MACD_12_26_9",
+  "MACD_SIGNAL_12_26_9",
+  "MACD_HIST_12_26_9",
+  "Volume_Z_30",
+  "Return_5"
+]
+
+[[experiments]]
+name = "tsla_regime_features"
+description = "TSLA: add macro context and regime flags (post-2018 history)."
+tickers = ["TSLA"]
+score_metric = "MAE"
+[experiments.overrides.tickers.TSLA]
+start_date = "2018-01-01"
+window_size = 80
+forecast_horizon = 2
+[experiments.overrides.tickers.TSLA.features]
+engineered = [
+  "Daily_Return",
+  "Log_Return",
+  "SMA_10",
+  "SMA_30",
+  "EMA_10",
+  "Volatility_14",
+  "High_Low_Range",
+  "True_Range",
+  "ATR_14",
+  "RSI_7",
+  "RSI_14",
+  "MACD_12_26_9",
+  "MACD_SIGNAL_12_26_9",
+  "MACD_HIST_12_26_9",
+  "Return_5",
+  "Return_10",
+  "Return_20",
+  "Volume_Z_20",
+  "Volume_Z_60",
+  "Volatility_28",
+  "Vol_Regime_28",
+  "QQQ_Return",
+  "XLY_Return",
+  "VIX_Return",
+  "CLF_Return"
+]
+[experiments.overrides.tickers.TSLA.model]
+lstm_units = [192, 96]
+dropout = 0.3
+learning_rate = 0.0004
+epochs = 80
+loss = "mse"
+[experiments.overrides.tickers.TSLA.backtest]
+splits = 2
+step = 50
+min_train_points = 600
+
+[[experiments]]
+name = "tsla_seq2seq"
+description = "TSLA: sequence-to-sequence LSTM with attention for short horizon."
+tickers = ["TSLA"]
+score_metric = "MAE"
+[experiments.overrides.tickers.TSLA]
+start_date = "2018-01-01"
+window_size = 80
+forecast_horizon = 2
+[experiments.overrides.tickers.TSLA.model]
+type = "seq2seq"
+lstm_units = [192, 96]
+dropout = 0.35
+learning_rate = 0.00035
+epochs = 90
+loss = "mse"
+[experiments.overrides.tickers.TSLA.backtest]
+splits = 2
+step = 50
+min_train_points = 600
+
+[[experiments]]
+name = "tsla_transformer"
+description = "TSLA: transformer-style forecaster with macro-enhanced regime features."
+tickers = ["TSLA"]
+score_metric = "MAE"
+[experiments.overrides.tickers.TSLA]
+start_date = "2018-01-01"
+window_size = 80
+forecast_horizon = 2
+[experiments.overrides.tickers.TSLA.features]
+engineered = [
+  "Daily_Return",
+  "Log_Return",
+  "SMA_10",
+  "SMA_30",
+  "EMA_10",
+  "Volatility_14",
+  "High_Low_Range",
+  "True_Range",
+  "ATR_14",
+  "RSI_7",
+  "RSI_14",
+  "MACD_12_26_9",
+  "MACD_SIGNAL_12_26_9",
+  "MACD_HIST_12_26_9",
+  "Return_5",
+  "Return_10",
+  "Return_20",
+  "Volume_Z_20",
+  "Volume_Z_60",
+  "Volatility_28",
+  "Vol_Regime_28"
+]
+[experiments.overrides.tickers.TSLA.model]
+type = "transformer"
+lstm_units = [256]
+dropout = 0.3
+learning_rate = 0.0003
+epochs = 80
+loss = "mse"
+[experiments.overrides.tickers.TSLA.backtest]
+splits = 2
+step = 50
+min_train_points = 600

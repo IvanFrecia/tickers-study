@@ -1,0 +1,89 @@
+[base]
+config = "configs/tickers.toml"
+artifact_root = "artifacts/experiments_sndk"
+
+[[experiments]]
+name = "sndk_compact_mae"
+description = "SNDK compact LSTM with stronger regularization and MAE loss."
+tickers = ["SNDK"]
+score_metric = "MAE"
+[experiments.overrides.tickers.SNDK]
+window_size = 30
+forecast_horizon = 5
+[experiments.overrides.tickers.SNDK.model]
+lstm_units = [64]
+dropout = 0.35
+learning_rate = 0.0003
+epochs = 25
+batch_size = 16
+loss = "mae"
+metrics = ["mae", "mse", "mape"]
+[experiments.overrides.tickers.SNDK.backtest]
+splits = 1
+step = 15
+min_train_points = 80
+
+[[experiments]]
+name = "sndk_seq2seq_mae"
+description = "SNDK seq2seq variant with MAE loss for smoother multi-step returns."
+tickers = ["SNDK"]
+score_metric = "MAE"
+[experiments.overrides.tickers.SNDK]
+window_size = 30
+forecast_horizon = 5
+[experiments.overrides.tickers.SNDK.model]
+type = "seq2seq"
+lstm_units = [96]
+dropout = 0.30
+learning_rate = 0.0003
+epochs = 25
+batch_size = 16
+loss = "mae"
+metrics = ["mae", "mse", "mape"]
+[experiments.overrides.tickers.SNDK.backtest]
+splits = 1
+step = 15
+min_train_points = 80
+
+[[experiments]]
+name = "sndk_transformer_slim"
+description = "SNDK lightweight transformer variant under MAE objective."
+tickers = ["SNDK"]
+score_metric = "MAE"
+[experiments.overrides.tickers.SNDK]
+window_size = 30
+forecast_horizon = 5
+[experiments.overrides.tickers.SNDK.model]
+type = "transformer"
+lstm_units = [64]
+dropout = 0.20
+learning_rate = 0.0002
+epochs = 25
+batch_size = 16
+loss = "mae"
+metrics = ["mae", "mse", "mape"]
+[experiments.overrides.tickers.SNDK.backtest]
+splits = 1
+step = 15
+min_train_points = 80
+
+[[experiments]]
+name = "sndk_short_window_mse"
+description = "SNDK short-window LSTM with conservative learning rate under MSE."
+tickers = ["SNDK"]
+score_metric = "MAE"
+[experiments.overrides.tickers.SNDK]
+window_size = 20
+forecast_horizon = 5
+[experiments.overrides.tickers.SNDK.model]
+lstm_units = [48]
+dropout = 0.40
+learning_rate = 0.0002
+epochs = 20
+batch_size = 16
+loss = "mse"
+metrics = ["mae", "mse", "mape"]
+[experiments.overrides.tickers.SNDK.backtest]
+splits = 1
+step = 12
+min_train_points = 70

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tickers User Guide</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#guideMain">Skip to guide</a>
+    <div class="ambient-glow"></div>
+    <aside class="study-disclaimer" role="note">
+      Research dashboard only. Forecasts are not financial advice.
+      Educational study — not an offer to buy or sell securities.
+      <a href="/legal">Legal</a>
+    </aside>
+    <main id="guideMain" class="shell guide-shell">
+      <header class="hero fade-up">
+        <div class="hero-copy">
+          <p class="eyebrow">USER GUIDE</p>
+          <h1>Tickers Dashboard Quick Guide</h1>
+          <p class="subtitle">
+            Read the four insight cards, triage failed-ticker alerts, then open a ticker to follow initial_forecast → revisions → resolved_actual.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a class="guide-link" href="/dashboard">Back To Dashboard</a>
+          <a class="guide-link" href="/legal">Legal</a>
+        </div>
+      </header>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>How To Read The Top Insights</h2>
+            <p>The dashboard shows four cards first. Each label with <strong>?</strong> has a definition. Tab to the <strong>?</strong>, press Enter to open, Escape to dismiss.</p>
+          </div>
+        </div>
+        <div class="guide-example-grid">
+          <article class="summary-card guide-example-card insight-critical">
+            <span class="label">
+              <span class="help-label">Open / critical alerts<span class="help-dot">?</span><span class="help-tip">Failed-ticker alerts that need triage before charts.</span></span>
+            </span>
+            <span class="value">2 critical</span>
+            <span class="insight-sub">3 open · 1 warning</span>
+          </article>
+          <article class="summary-card guide-example-card">
+            <span class="label">
+              <span class="help-label">Prior-week accuracy<span class="help-dot">?</span><span class="help-tip">Direction hit and MAE for resolved previous-week outcomes.</span></span>
+            </span>
+            <span class="value">69.2%</span>
+            <span class="insight-sub">MAE 3.10 · 12 resolved</span>
+          </article>
+          <article class="summary-card guide-example-card insight-warning">
+            <span class="label">
+              <span class="help-label">Freshness<span class="help-dot">?</span><span class="help-tip">Current vs stale versus the live target week.</span></span>
+            </span>
+            <span class="value">9 current</span>
+            <span class="insight-sub">4 stale · 13 visible</span>
+          </article>
+          <article class="summary-card guide-example-card insight-warning">
+            <span class="label">
+              <span class="help-label">Under review<span class="help-dot">?</span><span class="help-tip">Tickers the weekly quality gate marked under_review.</span></span>
+            </span>
+            <span class="value">2</span>
+            <span class="insight-sub">11 live / on track</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>Forecast cycle labels</h2>
+            <p>These names match the ledger. Later revisions never overwrite the first call.</p>
+          </div>
+        </div>
+        <div class="guide-example-grid">
+          <article class="summary-card guide-example-card">
+            <span class="label">initial_forecast</span>
+            <span class="value">First frozen call</span>
+            <span class="insight-sub">Week-ahead target close, kept as issued.</span>
+          </article>
+          <article class="summary-card guide-example-card">
+            <span class="label">latest_forecast</span>
+            <span class="value">Most recent revision</span>
+            <span class="insight-sub">Same target week; not a replacement of the first call.</span>
+          </article>
+          <article class="summary-card guide-example-card">
+            <span class="label">revisions</span>
+            <span class="value">Later calls</span>
+            <span class="insight-sub">Listed on the Revision timeline tab.</span>
+          </article>
+          <article class="summary-card guide-example-card">
+            <span class="label">resolved_actual</span>
+            <span class="value">Realized close</span>
+            <span class="insight-sub">Filled only after the target week completes. Pending is not a zero.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>How To Use Failed-Ticker Alerts</h2>
+            <p>Alerts combine retry failures from automation state and latest status from weekly file weekly rows. Severity always includes an icon plus the words critical, warning, or info.</p>
+          </div>
+        </div>
+        <div class="guide-alert-example">
+          <div class="alert-item severity-critical">
+            <div class="alert-head">
+              <strong>SNDK</strong>
+              <span class="severity-badge severity-critical">
+                <svg class="sev-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 1 15 14H1L8 1zm0 4.2c.4 0 .7.3.7.7v3.2c0 .4-.3.7-.7.7s-.8-.3-.8-.7V5.9c0-.4.4-.7.8-.7zm0 6.2a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7z"/></svg>
+                <span class="severity-text">critical</span>
+              </span>
+            </div>
+            <ul class="alert-messages">
+              <li>Automation retry state is failure: data/provider fetch failed.</li>
+              <li>Latest weekly weekly file status is under_review.</li>
+            </ul>
+            <div class="alert-meta">
+              <span>Automation: failure</span>
+              <span>BQ status: under_review</span>
+              <span>Run date: 2026-03-02</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>How To Read Ticker Detail</h2>
+            <p>Use the tabs. Start with Overview (Target Close Truth), then Revision timeline, Forecast vs actual, and History. Ops stays collapsed.</p>
+          </div>
+        </div>
+        <ol class="guide-steps">
+          <li>Pick a ticker card from Watchlist (cohort badge, projected move, status).</li>
+          <li>On <strong>Overview</strong>, read <strong>Target Close Truth</strong>: initial_forecast, latest_forecast, resolved_actual.</li>
+          <li>Open <strong>Revision timeline</strong> when revisions exist. The first frozen call stays highlighted.</li>
+          <li>Use <strong>Forecast vs actual</strong> to overlay initial call, latest call, and realized close.</li>
+          <li>Use <strong>History</strong> (Resolved Week History) for completed target weeks.</li>
+          <li>Open <strong>Ops</strong> only if you need snapshot metrics or the target-close path.</li>
+        </ol>
+      </section>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>Empty, stale, and failed states</h2>
+            <p>Missing data is labeled Unavailable or Not resolved yet. A zero is used only when the count is truly zero (for example, no open alerts).</p>
+          </div>
+        </div>
+        <p class="subtitle">
+          Stale cards show a Stale badge. Load failures appear in the banner under the header — not as charts filled with zeros.
+        </p>
+      </section>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>Help behavior</h2>
+            <p>Every key KPI/label on the dashboard has a keyboard-accessible definition.</p>
+          </div>
+        </div>
+        <p class="subtitle">
+          Keyboard: Tab to the <strong>?</strong> button, Enter or Space to open, Escape to dismiss.
+          Pointer: hover or click the <strong>?</strong>. Touch: tap the <strong>?</strong> once.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

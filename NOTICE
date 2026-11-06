@@ -1,0 +1,21 @@
+Tickers
+Copyright 2026 SkyLabs Developments / Iván Frecia
+
+This product includes software developed at SkyLabs Developments.
+Contact: freciaivan@gmail.com
+
+Third-party components used by the study, under their own licenses:
+
+- TensorFlow (Apache-2.0)
+- yfinance (Apache-2.0)
+- FastAPI and Starlette (MIT)
+- Uvicorn (BSD-3-Clause)
+- pandas, numpy, scikit-learn, joblib (BSD-3-Clause)
+- pandas-market-calendars (MIT)
+- httpx (BSD-3-Clause)
+- protobuf (BSD-3-Clause)
+- Plotly.js, loaded in the browser from the Plotly CDN (MIT)
+
+Market prices, when a local run downloads them, come from Yahoo Finance through
+yfinance. That data is not covered by this license and is not an official
+exchange feed.

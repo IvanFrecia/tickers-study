@@ -1,0 +1,3379 @@
+{
+  "kind": "resolved_previous_week_comparison",
+  "coverage": {
+    "weekly_summaries_read": 138,
+    "first_summary_week": "2026-02-26_to_2026-02-27",
+    "last_summary_week": "2026-11-05_to_2026-11-06",
+    "last_summary_generated_at": "2026-11-05T23:22:47Z",
+    "resolved_target_week_end_first": "2026-03-27",
+    "resolved_target_week_end_last": "2026-10-30",
+    "resolved_call_count": 324,
+    "direction_match_rate": 0.4444,
+    "median_absolute_error_pct": 7.8218
+  },
+  "note": "Each row is the latest resolved previous-week comparison for one symbol and target week. error_pct is (actual-predicted)/predicted and is signed in the row; the median uses the absolute value. This is not MAPE and not the training R-squared. The week ending 2026-11-06 was still unresolved in the last summary. Closes are omitted.",
+  "by_symbol": [
+    {
+      "symbol": "000660.KS",
+      "resolved_weeks": 4,
+      "direction_match_rate": 0.75,
+      "median_absolute_error_pct": 13.5837
+    },
+    {
+      "symbol": "AAPL",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.5455,
+      "median_absolute_error_pct": 2.899
+    },
+    {
+      "symbol": "ALAB",
+      "resolved_weeks": 3,
+      "direction_match_rate": 1.0,
+      "median_absolute_error_pct": 18.0381
+    },
+    {
+      "symbol": "AMZN",
+      "resolved_weeks": 26,
+      "direction_match_rate": 0.3846,
+      "median_absolute_error_pct": 3.8254
+    },
+    {
+      "symbol": "AVGO",
+      "resolved_weeks": 3,
+      "direction_match_rate": 0.0,
+      "median_absolute_error_pct": 13.3845
+    },
+    {
+      "symbol": "BA",
+      "resolved_weeks": 26,
+      "direction_match_rate": 0.3462,
+      "median_absolute_error_pct": 1.2571
+    },
+    {
+      "symbol": "CVX",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.5909,
+      "median_absolute_error_pct": 5.1154
+    },
+    {
+      "symbol": "DELL",
+      "resolved_weeks": 3,
+      "direction_match_rate": 1.0,
+      "median_absolute_error_pct": 4.0899
+    },
+    {
+      "symbol": "GOOG",
+      "resolved_weeks": 26,
+      "direction_match_rate": 0.4231,
+      "median_absolute_error_pct": 12.3077
+    },
+    {
+      "symbol": "MRNA",
+      "resolved_weeks": 3,
+      "direction_match_rate": 1.0,
+      "median_absolute_error_pct": 9.6474
+    },
+    {
+      "symbol": "MU",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.4091,
+      "median_absolute_error_pct": 7.5006
+    },
+    {
+      "symbol": "NVDA",
+      "resolved_weeks": 26,
+      "direction_match_rate": 0.4231,
+      "median_absolute_error_pct": 9.1453
+    },
+    {
+      "symbol": "RKLB",
+      "resolved_weeks": 3,
+      "direction_match_rate": 0.6667,
+      "median_absolute_error_pct": 5.3834
+    },
+    {
+      "symbol": "SMCI",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.2727,
+      "median_absolute_error_pct": 9.4106
+    },
+    {
+      "symbol": "SNDK",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.5455,
+      "median_absolute_error_pct": 81.2329
+    },
+    {
+      "symbol": "STX",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.4545,
+      "median_absolute_error_pct": 9.4667
+    },
+    {
+      "symbol": "TSLA",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.2727,
+      "median_absolute_error_pct": 9.8137
+    },
+    {
+      "symbol": "VRT",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.3636,
+      "median_absolute_error_pct": 4.8642
+    },
+    {
+      "symbol": "VST",
+      "resolved_weeks": 3,
+      "direction_match_rate": 1.0,
+      "median_absolute_error_pct": 8.1167
+    },
+    {
+      "symbol": "WDC",
+      "resolved_weeks": 22,
+      "direction_match_rate": 0.4545,
+      "median_absolute_error_pct": 12.4974
+    }
+  ],
+  "rows": [
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-03-27",
+      "status": "resolved",
+      "absolute_error": 1.523704191554117,
+      "error_pct": -0.7585761825247047,
+      "direction_match": true,
+      "predicted_return_pct": -2.1942322125349385,
+      "realized_return_pct": -2.936163472106068
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-03-27",
+      "status": "resolved",
+      "absolute_error": 3.8412369613565147,
+      "error_pct": -1.976338974258499,
+      "direction_match": true,
+      "predicted_return_pct": -0.38886526361091095,
+      "realized_return_pct": -2.3575189421073146
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-03-27",
+      "status": "resolved",
+      "absolute_error": 14.371693524735349,
+      "error_pct": -4.987890385062032,
+      "direction_match": true,
+      "predicted_return_pct": -3.5671558451590903,
+      "realized_return_pct": -8.377120406800255
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-03-27",
+      "status": "resolved",
+      "absolute_error": 12.904629898153416,
+      "error_pct": -7.152365838220547,
+      "direction_match": false,
+      "predicted_return_pct": 4.472864712723315,
+      "realized_return_pct": -2.9994167731998758
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-05-01",
+      "status": "resolved",
+      "absolute_error": 8.629906378278747,
+      "error_pct": -3.116728300713435,
+      "direction_match": true,
+      "predicted_return_pct": 4.4631097465753555,
+      "realized_return_pct": 1.2072784412985065
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-05-01",
+      "status": "resolved",
+      "absolute_error": 0.9725506898476226,
+      "error_pct": -0.4258987544101139,
+      "direction_match": true,
+      "predicted_return_pct": -0.295787979848686,
+      "realized_return_pct": -0.7204269769369295
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-05-01",
+      "status": "resolved",
+      "absolute_error": 15.176262393134948,
+      "error_pct": -3.8093385353245086,
+      "direction_match": true,
+      "predicted_return_pct": 4.30859848856926,
+      "realized_return_pct": 0.3351308506872727
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-05-01",
+      "status": "resolved",
+      "absolute_error": 25.29600199599463,
+      "error_pct": -11.305677918423488,
+      "direction_match": false,
+      "predicted_return_pct": 12.114040553569794,
+      "realized_return_pct": -0.5612117727474994
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-05-08",
+      "status": "resolved",
+      "absolute_error": 8.337293519799232,
+      "error_pct": -2.9668258606684783,
+      "direction_match": true,
+      "predicted_return_pct": 3.6314018070697784,
+      "realized_return_pct": 0.5568385784843713
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-05-08",
+      "status": "resolved",
+      "absolute_error": 5.479943473250785,
+      "error_pct": 2.3632663976836645,
+      "direction_match": true,
+      "predicted_return_pct": 0.36794284824282236,
+      "realized_return_pct": 2.73990471562169
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-05-08",
+      "status": "resolved",
+      "absolute_error": 77.38805869964108,
+      "error_pct": -16.31152039170335,
+      "direction_match": true,
+      "predicted_return_pct": 20.01974731683731,
+      "realized_return_pct": 0.4427017591805571
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-05-08",
+      "status": "resolved",
+      "absolute_error": 9.131084732711315,
+      "error_pct": -4.070360943428097,
+      "direction_match": true,
+      "predicted_return_pct": 6.066705286502838,
+      "realized_return_pct": 1.7494075405400413
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-05-15",
+      "status": "resolved",
+      "absolute_error": 24.793376842536645,
+      "error_pct": -8.581000871722075,
+      "direction_match": false,
+      "predicted_return_pct": 8.125660568475723,
+      "realized_return_pct": -1.1526033074604298
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-05-15",
+      "status": "resolved",
+      "absolute_error": 9.738050847583452,
+      "error_pct": -4.229741154210464,
+      "direction_match": false,
+      "predicted_return_pct": 0.4441558383405147,
+      "realized_return_pct": -3.804371958153067
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-05-15",
+      "status": "resolved",
+      "absolute_error": 32.0111086691702,
+      "error_pct": 8.859762045255374,
+      "direction_match": true,
+      "predicted_return_pct": -9.02915969491005,
+      "realized_return_pct": -0.9693597133098112
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-05-15",
+      "status": "resolved",
+      "absolute_error": 0.9772822436524962,
+      "error_pct": -0.4318576884056709,
+      "direction_match": true,
+      "predicted_return_pct": -4.005563631653786,
+      "realized_return_pct": -4.420122985552178
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 6.733472610532544,
+      "error_pct": 2.228988000711268,
+      "direction_match": false,
+      "predicted_return_pct": -0.9519838728010654,
+      "realized_return_pct": 1.2557845216167602
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 16.646267908574146,
+      "error_pct": -5.882774509039802,
+      "direction_match": false,
+      "predicted_return_pct": 5.403517931699753,
+      "realized_return_pct": -0.7971333528174764
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 0.09985787066040075,
+      "error_pct": 0.04561383330939498,
+      "direction_match": true,
+      "predicted_return_pct": -0.31412695534526974,
+      "realized_return_pct": -0.26865640738166585
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 2.562475497278882,
+      "error_pct": -1.3209149413949952,
+      "direction_match": true,
+      "predicted_return_pct": 1.5614228323101997,
+      "realized_return_pct": 0.21988282342486612
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 12.68950872219466,
+      "error_pct": 3.460550206525232,
+      "direction_match": true,
+      "predicted_return_pct": -4.375702142715454,
+      "realized_return_pct": -1.0665753057268905
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 110.35006832074032,
+      "error_pct": -12.81129152701818,
+      "direction_match": false,
+      "predicted_return_pct": 13.023237884044647,
+      "realized_return_pct": -1.4564986145555676
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 20.708706152097307,
+      "error_pct": -8.773436496515417,
+      "direction_match": false,
+      "predicted_return_pct": 7.529822736978531,
+      "realized_return_pct": -1.904237975665877
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 4.35056974998389,
+      "error_pct": 13.930992208535601,
+      "direction_match": false,
+      "predicted_return_pct": -6.666368991136551,
+      "realized_return_pct": 6.335931872651584
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 511.89804345531593,
+      "error_pct": 52.94811060583541,
+      "direction_match": true,
+      "predicted_return_pct": -37.31248676776886,
+      "realized_return_pct": -4.120632925519411
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 183.47469369658666,
+      "error_pct": -18.41736928712061,
+      "direction_match": true,
+      "predicted_return_pct": 22.918422520160675,
+      "realized_return_pct": 0.2800827227194601
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 54.0438148603273,
+      "error_pct": 14.5292275482418,
+      "direction_match": false,
+      "predicted_return_pct": -10.98092868924141,
+      "realized_return_pct": 1.952854742830341
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 5.813668131374982,
+      "error_pct": -1.7444127263429539,
+      "direction_match": true,
+      "predicted_return_pct": 3.0530815944075584,
+      "realized_return_pct": 1.2554105241861246
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-05-22",
+      "status": "resolved",
+      "absolute_error": 67.28045953421952,
+      "error_pct": -12.198202122744657,
+      "direction_match": false,
+      "predicted_return_pct": 13.38249146938324,
+      "realized_return_pct": -0.44813401185584656
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 0.4615304788577532,
+      "error_pct": 0.14811705692366278,
+      "direction_match": true,
+      "predicted_return_pct": -0.29168431647121906,
+      "realized_return_pct": -0.14399929377262136
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 17.47576952725649,
+      "error_pct": -6.065537012231063,
+      "direction_match": false,
+      "predicted_return_pct": 5.151746049523354,
+      "realized_return_pct": -1.2262720261177007
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 3.330645438811075,
+      "error_pct": 1.461967765845787,
+      "direction_match": false,
+      "predicted_return_pct": -0.41990135796368744,
+      "realized_return_pct": 1.0359275853803218
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 5.874638464980308,
+      "error_pct": 3.3267979806233687,
+      "direction_match": true,
+      "predicted_return_pct": -3.5210788249969482,
+      "realized_return_pct": -0.31142002361973525
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 14.936948704789415,
+      "error_pct": -3.816609714683213,
+      "direction_match": false,
+      "predicted_return_pct": 1.3588900677859783,
+      "realized_return_pct": -2.5095831772362196
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 81.3590917178517,
+      "error_pct": -7.73111501180102,
+      "direction_match": true,
+      "predicted_return_pct": 13.95086944103241,
+      "realized_return_pct": 5.1411966675989715
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 40.073374073952436,
+      "error_pct": -15.951927049679462,
+      "direction_match": false,
+      "predicted_return_pct": 17.252449691295624,
+      "realized_return_pct": -1.4515755474219663
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 10.512135437223549,
+      "error_pct": 29.546841895443688,
+      "direction_match": false,
+      "predicted_return_pct": -13.855047523975372,
+      "realized_return_pct": 11.598065385020726
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 572.5926182659969,
+      "error_pct": 51.01559742638666,
+      "direction_match": false,
+      "predicted_return_pct": -31.6301167011261,
+      "realized_return_pct": 3.249187723517779
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 187.23664470188305,
+      "error_pct": -17.547349266173054,
+      "direction_match": false,
+      "predicted_return_pct": 21.155039966106415,
+      "realized_return_pct": -0.10445805031783022
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 14.326163617549469,
+      "error_pct": -3.182770249894149,
+      "direction_match": false,
+      "predicted_return_pct": 1.813201978802681,
+      "realized_return_pct": -1.4272783242432923
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 11.88077205332661,
+      "error_pct": 3.910345448907183,
+      "direction_match": false,
+      "predicted_return_pct": -3.2945360988378525,
+      "realized_return_pct": 0.48698160766582
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-05-29",
+      "status": "resolved",
+      "absolute_error": 97.45994538141804,
+      "error_pct": -15.502561032397377,
+      "direction_match": true,
+      "predicted_return_pct": 18.353472650051117,
+      "realized_return_pct": 0.005653318515204152
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 3.8441881622460414,
+      "error_pct": -1.2353417537658804,
+      "direction_match": true,
+      "predicted_return_pct": -0.01472431467846835,
+      "realized_return_pct": -1.24988417283717
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 29.172708707160496,
+      "error_pct": -10.600443932258942,
+      "direction_match": false,
+      "predicted_return_pct": 8.437178283929825,
+      "realized_return_pct": -3.057644001781825
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 1.3893005842307105,
+      "error_pct": -0.6407051673936801,
+      "direction_match": true,
+      "predicted_return_pct": -0.26708703953772617,
+      "realized_return_pct": -0.9060809664676492
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 0.4614133561429412,
+      "error_pct": -0.24573142093098507,
+      "direction_match": true,
+      "predicted_return_pct": -0.30719148926437656,
+      "realized_return_pct": -0.5521680441838133
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 59.41165584247392,
+      "error_pct": -13.973568948321333,
+      "direction_match": false,
+      "predicted_return_pct": 15.138429403305054,
+      "realized_return_pct": -0.9505184153800599
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 263.5077311992645,
+      "error_pct": -23.370606210928795,
+      "direction_match": false,
+      "predicted_return_pct": 13.20459246635437,
+      "realized_return_pct": -13.252007051644076
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 48.92470242511763,
+      "error_pct": -19.259820317677057,
+      "direction_match": false,
+      "predicted_return_pct": 16.173376142978668,
+      "realized_return_pct": -6.201407359138127
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 3.1270558448439942,
+      "error_pct": 8.119493232726033,
+      "direction_match": true,
+      "predicted_return_pct": -17.882852256298065,
+      "realized_return_pct": -11.215356002340549
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 295.76237949257484,
+      "error_pct": 23.407115533518958,
+      "direction_match": true,
+      "predicted_return_pct": -28.19390296936035,
+      "realized_return_pct": -11.386166877287804
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 250.4184485249316,
+      "error_pct": -22.809098278038576,
+      "direction_match": false,
+      "predicted_return_pct": 18.56374591588974,
+      "realized_return_pct": -8.479575412189497
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 60.77857037778722,
+      "error_pct": -13.45317692403224,
+      "direction_match": false,
+      "predicted_return_pct": 7.9647645354270935,
+      "realized_return_pct": -6.559926253138728
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 25.28111792196023,
+      "error_pct": -7.759916023926642,
+      "direction_match": false,
+      "predicted_return_pct": 0.5776470061391548,
+      "realized_return_pct": -7.2270939403786105
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-06-05",
+      "status": "resolved",
+      "absolute_error": 246.19170051813126,
+      "error_pct": -32.48290004670827,
+      "direction_match": false,
+      "predicted_return_pct": 31.69621229171753,
+      "realized_return_pct": -11.082536712301803
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 2.643957663900437,
+      "error_pct": 0.9164941214276894,
+      "direction_match": true,
+      "predicted_return_pct": -2.416519820690155,
+      "realized_return_pct": -1.522172961362226
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 20.455174800163718,
+      "error_pct": -7.897593001734641,
+      "direction_match": false,
+      "predicted_return_pct": 7.244082540273666,
+      "realized_return_pct": -1.2256186172015098
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 4.275332464710573,
+      "error_pct": -1.914396525957666,
+      "direction_match": false,
+      "predicted_return_pct": 0.7649373263120651,
+      "realized_return_pct": -1.1641031332462728
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 1.0315225484475832,
+      "error_pct": -0.5479491096776034,
+      "direction_match": true,
+      "predicted_return_pct": 1.308533176779747,
+      "realized_return_pct": 0.753413971210143
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 57.329780704403674,
+      "error_pct": -13.798120401880148,
+      "direction_match": true,
+      "predicted_return_pct": 16.527312994003296,
+      "realized_return_pct": 0.44873404601498934
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 119.84485842099002,
+      "error_pct": -10.880596612614077,
+      "direction_match": false,
+      "predicted_return_pct": 10.602272301912308,
+      "realized_return_pct": -1.4319147916437602
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 18.22057095490709,
+      "error_pct": -8.155643968822005,
+      "direction_match": true,
+      "predicted_return_pct": 9.049923717975616,
+      "realized_return_pct": 0.15620019126554033
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 2.6137231045404974,
+      "error_pct": 9.386257273411054,
+      "direction_match": true,
+      "predicted_return_pct": -12.898728251457214,
+      "realized_return_pct": -4.72317879672609
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 618.2371179825277,
+      "error_pct": 45.3964299364544,
+      "direction_match": false,
+      "predicted_return_pct": -27.61862277984619,
+      "realized_return_pct": 5.239938416941699
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 41.7054477425645,
+      "error_pct": -4.287395924741099,
+      "direction_match": true,
+      "predicted_return_pct": 12.05582320690155,
+      "realized_return_pct": 7.251546409293762
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 42.5308173307792,
+      "error_pct": -9.473169235006885,
+      "direction_match": true,
+      "predicted_return_pct": 12.479222565889359,
+      "realized_return_pct": 1.823875458002605
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 15.128057951514165,
+      "error_pct": 5.257508898608643,
+      "direction_match": false,
+      "predicted_return_pct": -3.4034065902233124,
+      "realized_return_pct": 1.6751679040485068
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-06-12",
+      "status": "resolved",
+      "absolute_error": 31.145461549278934,
+      "error_pct": -5.242677731889551,
+      "direction_match": true,
+      "predicted_return_pct": 12.240072339773178,
+      "realized_return_pct": 6.355687060959165
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 6.641397055864559,
+      "error_pct": -2.1799988141056192,
+      "direction_match": true,
+      "predicted_return_pct": 2.9401568695902824,
+      "realized_return_pct": 0.6960626705947498
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 0.12679725140333176,
+      "error_pct": 0.05191009136593919,
+      "direction_match": true,
+      "predicted_return_pct": 2.8476640582084656,
+      "realized_return_pct": 2.9010523745888155
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 1.1415046342425512,
+      "error_pct": -0.5099155524229367,
+      "direction_match": true,
+      "predicted_return_pct": -0.7838048972189426,
+      "realized_return_pct": -1.2897237065703073
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 9.87709473159805,
+      "error_pct": 6.031706381570403,
+      "direction_match": true,
+      "predicted_return_pct": -7.7864013612270355,
+      "realized_return_pct": -2.224347847456449
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 28.13198325910298,
+      "error_pct": -7.111363489976914,
+      "direction_match": true,
+      "predicted_return_pct": 9.24936980009079,
+      "realized_return_pct": 1.4802500030972685
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 71.4589472542284,
+      "error_pct": -5.927994544763037,
+      "direction_match": true,
+      "predicted_return_pct": 15.554118156433105,
+      "realized_return_pct": 8.704076335870717
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 11.653761930935389,
+      "error_pct": -5.241326179680825,
+      "direction_match": true,
+      "predicted_return_pct": 8.645869046449661,
+      "realized_return_pct": 2.9513846689763494
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 0.27075040581696896,
+      "error_pct": 0.8909414045823081,
+      "direction_match": true,
+      "predicted_return_pct": 9.392543882131577,
+      "realized_return_pct": 10.367167349103356
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 909.3658122071574,
+      "error_pct": 71.30132401758014,
+      "direction_match": false,
+      "predicted_return_pct": -34.88951623439789,
+      "realized_return_pct": 11.535120764727987
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 5.97741493544595,
+      "error_pct": 0.561653796197393,
+      "direction_match": false,
+      "predicted_return_pct": -0.1704748137854053,
+      "realized_return_pct": 0.3902215041488015
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 43.27165198257899,
+      "error_pct": 12.113502401457808,
+      "direction_match": false,
+      "predicted_return_pct": -9.879828989505768,
+      "realized_return_pct": 1.0368800900483348
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 14.763519551361242,
+      "error_pct": -4.2446653852190925,
+      "direction_match": true,
+      "predicted_return_pct": 9.519970417022705,
+      "realized_return_pct": 4.871214142829152
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-06-18",
+      "status": "resolved",
+      "absolute_error": 126.14126233538263,
+      "error_pct": -14.459585110797175,
+      "direction_match": true,
+      "predicted_return_pct": 22.501683235168457,
+      "realized_return_pct": 4.78844808562012
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 3.335764064077239,
+      "error_pct": -1.1618185052058418,
+      "direction_match": true,
+      "predicted_return_pct": 4.3488167226314545,
+      "realized_return_pct": 3.1364728599845946
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 8.156426230964229,
+      "error_pct": 3.6326087031721674,
+      "direction_match": false,
+      "predicted_return_pct": -1.0908851400017738,
+      "realized_return_pct": 2.5020959746330775
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 0.0845911776785897,
+      "error_pct": 0.03895241794599056,
+      "direction_match": true,
+      "predicted_return_pct": -0.43764272704720497,
+      "realized_return_pct": -0.3988607815253641
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 5.292449086499232,
+      "error_pct": 3.192693102649201,
+      "direction_match": true,
+      "predicted_return_pct": -3.7578128278255463,
+      "realized_return_pct": -0.6850951561407986
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 82.37214928774029,
+      "error_pct": -19.750569296740068,
+      "direction_match": false,
+      "predicted_return_pct": 21.880285441875458,
+      "realized_return_pct": -2.1917647933867492
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 55.288311736640026,
+      "error_pct": -4.655394181453813,
+      "direction_match": true,
+      "predicted_return_pct": -2.1376602351665497,
+      "realized_return_pct": -6.693537906413168
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 28.340908371648084,
+      "error_pct": -12.83143567309192,
+      "direction_match": false,
+      "predicted_return_pct": 12.838919460773468,
+      "realized_return_pct": -1.6399339040476795
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 3.4673207348989195,
+      "error_pct": -10.168895225515035,
+      "direction_match": false,
+      "predicted_return_pct": 7.630427926778793,
+      "realized_return_pct": -3.314397519868817
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 943.9388211369514,
+      "error_pct": 82.312746491085,
+      "direction_match": true,
+      "predicted_return_pct": -50.88774561882019,
+      "realized_return_pct": -10.462100173982869
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 91.78047878339021,
+      "error_pct": -9.255045197265098,
+      "direction_match": true,
+      "predicted_return_pct": -3.2846495509147644,
+      "realized_return_pct": -12.235698947670937
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 36.93275425594311,
+      "error_pct": 10.774564424908757,
+      "direction_match": false,
+      "predicted_return_pct": -8.621976524591446,
+      "realized_return_pct": 1.2236074849746972
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 32.07350167620007,
+      "error_pct": -9.545017045249297,
+      "direction_match": false,
+      "predicted_return_pct": 3.210832178592682,
+      "realized_return_pct": -6.640659345397635
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-06-26",
+      "status": "resolved",
+      "absolute_error": 126.3974285639797,
+      "error_pct": -17.73134352944707,
+      "direction_match": false,
+      "predicted_return_pct": 5.546043813228607,
+      "realized_return_pct": -13.168687797035675
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 34.264454961694355,
+      "error_pct": 12.488614176067516,
+      "direction_match": false,
+      "predicted_return_pct": -6.798849999904633,
+      "realized_return_pct": 4.840682031265226
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 9.374166004417646,
+      "error_pct": 4.018145509692039,
+      "direction_match": false,
+      "predicted_return_pct": -3.4771058708429337,
+      "realized_return_pct": 0.4013244654325923
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 9.427063431242118,
+      "error_pct": 4.343009148264858,
+      "direction_match": false,
+      "predicted_return_pct": -0.6940524093806678,
+      "realized_return_pct": 3.618813979251035
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 2.8241767998407,
+      "error_pct": 1.6974682963676042,
+      "direction_match": true,
+      "predicted_return_pct": 0.4139161668717861,
+      "realized_return_pct": 2.1184105589455786
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 89.04114346322604,
+      "error_pct": -19.999307363392006,
+      "direction_match": false,
+      "predicted_return_pct": 24.40166473388672,
+      "realized_return_pct": -0.47780656141972516
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 156.63309372923322,
+      "error_pct": -13.834485913623531,
+      "direction_match": false,
+      "predicted_return_pct": 9.678871929645538,
+      "realized_return_pct": -5.494636157682466
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 15.26840733105098,
+      "error_pct": 8.503158692462303,
+      "direction_match": true,
+      "predicted_return_pct": -9.11955013871193,
+      "realized_return_pct": -1.3918412665829665
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 2.741737616951127,
+      "error_pct": -9.150796642159692,
+      "direction_match": false,
+      "predicted_return_pct": 8.360713720321655,
+      "realized_return_pct": -1.5551548322178161
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 1011.794358738407,
+      "error_pct": 137.99598663718126,
+      "direction_match": true,
+      "predicted_return_pct": -63.9209508895874,
+      "realized_return_pct": -14.133311100360368
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 70.044523812041,
+      "error_pct": -7.868363286358242,
+      "direction_match": true,
+      "predicted_return_pct": -2.7300894260406494,
+      "realized_return_pct": -10.38363935831556
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 70.41344837874476,
+      "error_pct": -15.179779043131628,
+      "direction_match": false,
+      "predicted_return_pct": 9.067358076572418,
+      "realized_return_pct": -7.488825887632451
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 24.768702663319573,
+      "error_pct": -7.614141265697255,
+      "direction_match": false,
+      "predicted_return_pct": 4.456581920385361,
+      "realized_return_pct": -3.49688978835156
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-07-02",
+      "status": "resolved",
+      "absolute_error": 117.97679428496485,
+      "error_pct": -17.957528380186925,
+      "direction_match": false,
+      "predicted_return_pct": 9.794408082962036,
+      "realized_return_pct": -9.921953908394121
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 4.884335513725716,
+      "error_pct": 1.5733808828217986,
+      "direction_match": true,
+      "predicted_return_pct": -1.8292104825377464,
+      "realized_return_pct": -0.2846100477547692
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 6.937492550710601,
+      "error_pct": 2.909991481005436,
+      "direction_match": true,
+      "predicted_return_pct": -3.4963931888341904,
+      "realized_return_pct": -0.6881464517662833
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 1.6315065340738215,
+      "error_pct": -0.7286389914580228,
+      "direction_match": false,
+      "predicted_return_pct": 0.3592419438064162,
+      "realized_return_pct": -0.37201462452785194
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 4.972584751504456,
+      "error_pct": 2.900694105047713,
+      "direction_match": false,
+      "predicted_return_pct": -1.5068048611283302,
+      "realized_return_pct": 1.3501814441380608
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 92.86683193240606,
+      "error_pct": -20.733978354980035,
+      "direction_match": false,
+      "predicted_return_pct": 25.72895884513855,
+      "realized_return_pct": -0.3396562677542338
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 89.00909098988996,
+      "error_pct": -8.331773337665481,
+      "direction_match": false,
+      "predicted_return_pct": 7.731541991233826,
+      "realized_return_pct": -1.2444059006476877
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 3.2819151853956896,
+      "error_pct": 1.5802895535303767,
+      "direction_match": true,
+      "predicted_return_pct": 2.415471337735653,
+      "realized_return_pct": 4.033932332484786
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 2.949330716695755,
+      "error_pct": -9.435041312349853,
+      "direction_match": true,
+      "predicted_return_pct": 10.691680014133453,
+      "realized_return_pct": 0.24787427546585672
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 1295.3948853772308,
+      "error_pct": 208.75783479375318,
+      "direction_match": false,
+      "predicted_return_pct": -66.6073739528656,
+      "realized_return_pct": 3.102349163907017
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 19.84875969633572,
+      "error_pct": 2.228967360865617,
+      "direction_match": true,
+      "predicted_return_pct": 0.045078620314598083,
+      "realized_return_pct": 2.2750507689137565
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 39.2080047083482,
+      "error_pct": 10.638391372271837,
+      "direction_match": false,
+      "predicted_return_pct": -9.346447885036469,
+      "realized_return_pct": 0.29763178181976496
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 16.847456556732936,
+      "error_pct": -5.018493620804249,
+      "direction_match": false,
+      "predicted_return_pct": 3.638993576169014,
+      "realized_return_pct": -1.5621227051167534
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-07-10",
+      "status": "resolved",
+      "absolute_error": 48.03897205272551,
+      "error_pct": -7.61762813570185,
+      "direction_match": true,
+      "predicted_return_pct": 9.095928072929382,
+      "realized_return_pct": 0.7854059611408617
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 3.0045900693714884,
+      "error_pct": -0.8922460063533384,
+      "direction_match": true,
+      "predicted_return_pct": 1.045601163059473,
+      "realized_return_pct": 0.1440258220863525
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 3.759272961576528,
+      "error_pct": -1.4977823479110175,
+      "direction_match": false,
+      "predicted_return_pct": 0.43990127742290497,
+      "realized_return_pct": -1.064469834169588
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 2.0662546727999143,
+      "error_pct": -0.9561732976818832,
+      "direction_match": false,
+      "predicted_return_pct": 0.8193790912628174,
+      "realized_return_pct": -0.14462889049650934
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 14.869919302813912,
+      "error_pct": 8.619739102684662,
+      "direction_match": false,
+      "predicted_return_pct": -6.173129007220268,
+      "realized_return_pct": 1.9145024805698585
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 63.83800562693705,
+      "error_pct": -15.571840410740407,
+      "direction_match": false,
+      "predicted_return_pct": 15.869535505771637,
+      "realized_return_pct": -2.1734836478533155
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 98.75081124506823,
+      "error_pct": -10.420040671206559,
+      "direction_match": false,
+      "predicted_return_pct": 11.076044291257858,
+      "realized_return_pct": -0.4981246998586219
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 44.66989073224522,
+      "error_pct": -18.04990742510319,
+      "direction_match": false,
+      "predicted_return_pct": 19.324925541877747,
+      "realized_return_pct": -2.2131130535044967
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 3.449161937047222,
+      "error_pct": -12.483773148127518,
+      "direction_match": false,
+      "predicted_return_pct": 11.949602514505386,
+      "realized_return_pct": -2.0259319036359256
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 875.0178938659083,
+      "error_pct": 182.3706025113455,
+      "direction_match": true,
+      "predicted_return_pct": -65.99752902984619,
+      "realized_return_pct": -3.9870178528313387
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 38.043092997069834,
+      "error_pct": -4.607357603119977,
+      "direction_match": true,
+      "predicted_return_pct": 10.759779065847397,
+      "realized_return_pct": 5.6566799638581875
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 49.52570092571841,
+      "error_pct": 14.948253550033469,
+      "direction_match": true,
+      "predicted_return_pct": -15.277886390686035,
+      "realized_return_pct": -2.613410035418371
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 18.34876647615647,
+      "error_pct": -5.959156938477285,
+      "direction_match": false,
+      "predicted_return_pct": 4.691706970334053,
+      "realized_return_pct": -1.5470361495989164
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-07-17",
+      "status": "resolved",
+      "absolute_error": 81.72625071484163,
+      "error_pct": -14.621486490308541,
+      "direction_match": true,
+      "predicted_return_pct": 19.737420976161957,
+      "realized_return_pct": 2.2300301442885693
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 16.978023874124688,
+      "error_pct": 5.372078947372733,
+      "direction_match": false,
+      "predicted_return_pct": -1.746576651930809,
+      "realized_return_pct": 3.531674818823822
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 5.972026450947169,
+      "error_pct": -2.508390290800724,
+      "direction_match": false,
+      "predicted_return_pct": 1.8925033509731293,
+      "realized_return_pct": -0.6633583101364827
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 2.1733032746787444,
+      "error_pct": -1.0280365940060114,
+      "direction_match": false,
+      "predicted_return_pct": 1.0387149639427595,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 19.037977017480216,
+      "error_pct": 10.832295083533479,
+      "direction_match": false,
+      "predicted_return_pct": -9.601883590221405,
+      "realized_return_pct": 0.19030712924191318
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 79.5356909862021,
+      "error_pct": -19.95247509514799,
+      "direction_match": true,
+      "predicted_return_pct": 25.220108032226562,
+      "realized_return_pct": 0.2355971629791499
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 164.56525051039034,
+      "error_pct": -15.160104713629394,
+      "direction_match": false,
+      "predicted_return_pct": 9.624750167131424,
+      "realized_return_pct": -6.994476750260316
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 44.08573583575185,
+      "error_pct": -17.569236703569402,
+      "direction_match": false,
+      "predicted_return_pct": 20.198188722133636,
+      "realized_return_pct": -0.9197155678610833
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 2.6311158942073547,
+      "error_pct": -8.038576723283255,
+      "direction_match": false,
+      "predicted_return_pct": 4.90742139518261,
+      "realized_return_pct": -3.525642162087216
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 826.9932767937498,
+      "error_pct": 135.66901961942662,
+      "direction_match": true,
+      "predicted_return_pct": -62.146466970443726,
+      "realized_return_pct": -10.790949817928878
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 130.22351246441212,
+      "error_pct": -13.262218157461932,
+      "direction_match": false,
+      "predicted_return_pct": 7.505641877651215,
+      "realized_return_pct": -6.751990879742645
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 25.79929180989143,
+      "error_pct": -7.614244850269346,
+      "direction_match": false,
+      "predicted_return_pct": 5.986827239394188,
+      "realized_return_pct": -2.0832692956452528
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 24.947292855841397,
+      "error_pct": -7.91205740561164,
+      "direction_match": false,
+      "predicted_return_pct": 3.70585098862648,
+      "realized_return_pct": -4.499415474571713
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-07-24",
+      "status": "resolved",
+      "absolute_error": 186.73407601258805,
+      "error_pct": -26.429592793699836,
+      "direction_match": false,
+      "predicted_return_pct": 26.55097246170044,
+      "realized_return_pct": -6.895934236394205
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 37.4720953528863,
+      "error_pct": -10.818138541063592,
+      "direction_match": false,
+      "predicted_return_pct": 3.884505480527878,
+      "realized_return_pct": -7.353864245054428
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 27.32603476382792,
+      "error_pct": 11.187550728046787,
+      "direction_match": true,
+      "predicted_return_pct": 3.717176988720894,
+      "realized_return_pct": 15.320588778032112
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 8.59325155436619,
+      "error_pct": -3.8237561723818674,
+      "direction_match": false,
+      "predicted_return_pct": 1.7352906987071037,
+      "realized_return_pct": -2.154818758875345
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 26.248544808003317,
+      "error_pct": 15.38768941600507,
+      "direction_match": false,
+      "predicted_return_pct": -11.298705637454987,
+      "realized_return_pct": 2.3503740470298564
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 1.179155411996362,
+      "error_pct": 0.33171649663965835,
+      "direction_match": true,
+      "predicted_return_pct": 6.530462205410004,
+      "realized_return_pct": 6.883841322491826
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 182.62829508151754,
+      "error_pct": -18.16007391918144,
+      "direction_match": false,
+      "predicted_return_pct": 14.97706025838852,
+      "realized_return_pct": -5.902858874636621
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 36.169299531802835,
+      "error_pct": -15.266506191466961,
+      "direction_match": true,
+      "predicted_return_pct": 21.472163498401642,
+      "realized_return_pct": 2.927608137009285
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 0.9094172274752346,
+      "error_pct": 3.3081046248447,
+      "direction_match": false,
+      "predicted_return_pct": -0.8633867837488651,
+      "realized_return_pct": 2.4161561029723413
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 674.4602019141894,
+      "error_pct": 124.81457312261546,
+      "direction_match": true,
+      "predicted_return_pct": -57.78229236602783,
+      "realized_return_pct": -5.088440800531633
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 31.70796896953243,
+      "error_pct": -3.5713688649687945,
+      "direction_match": true,
+      "predicted_return_pct": 4.245489090681076,
+      "realized_return_pct": 0.5224981501620511
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 33.94868483868618,
+      "error_pct": 12.244292307853929,
+      "direction_match": false,
+      "predicted_return_pct": -10.22784486413002,
+      "realized_return_pct": 0.7641202217660038
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 1.2936456389725208,
+      "error_pct": 0.5383990459565691,
+      "direction_match": true,
+      "predicted_return_pct": 5.615983158349991,
+      "realized_return_pct": 6.184618604052198
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-07-31",
+      "status": "resolved",
+      "absolute_error": 105.28864805601552,
+      "error_pct": -16.19504755275572,
+      "direction_match": true,
+      "predicted_return_pct": 21.96621298789978,
+      "realized_return_pct": 2.213726796214089
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 10.343842964035048,
+      "error_pct": -3.195761294280038,
+      "direction_match": true,
+      "predicted_return_pct": 3.605462610721588,
+      "realized_return_pct": 0.2944793378483706
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 23.70358234932064,
+      "error_pct": 9.452077485173445,
+      "direction_match": false,
+      "predicted_return_pct": -7.890832424163818,
+      "realized_return_pct": 0.8153974660524742
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 2.856435608977961,
+      "error_pct": 1.2335427808242663,
+      "direction_match": false,
+      "predicted_return_pct": -0.2697962336242199,
+      "realized_return_pct": 0.9604184952372391
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 10.403279315031455,
+      "error_pct": 5.90569546183723,
+      "direction_match": true,
+      "predicted_return_pct": -6.90867081284523,
+      "realized_return_pct": -1.410980409675474
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 25.015652053635677,
+      "error_pct": -6.609405624023353,
+      "direction_match": false,
+      "predicted_return_pct": 6.131360679864883,
+      "realized_return_pct": -0.8832914417626156
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 146.32783862070573,
+      "error_pct": -14.291253683189867,
+      "direction_match": false,
+      "predicted_return_pct": 16.15799516439438,
+      "realized_return_pct": -0.44243859785664097
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 30.79533987248101,
+      "error_pct": -12.0882015962099,
+      "direction_match": true,
+      "predicted_return_pct": 16.331951320171356,
+      "realized_return_pct": 2.269510523784277
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 4.139373365039972,
+      "error_pct": 15.336337128186747,
+      "direction_match": false,
+      "predicted_return_pct": -8.132652938365936,
+      "realized_return_pct": 5.956433117727625
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 544.3422320150712,
+      "error_pct": 81.50449684001654,
+      "direction_match": true,
+      "predicted_return_pct": -46.93481922149658,
+      "realized_return_pct": -3.6843106307321993
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 103.4486346677777,
+      "error_pct": -11.290947241799044,
+      "direction_match": false,
+      "predicted_return_pct": 7.416452467441559,
+      "realized_return_pct": -4.711882509669415
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 18.165203791970953,
+      "error_pct": -5.238775993659614,
+      "direction_match": true,
+      "predicted_return_pct": 8.517257124185562,
+      "realized_return_pct": 2.8322811089858524
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 20.177716448475394,
+      "error_pct": -6.896532351929725,
+      "direction_match": false,
+      "predicted_return_pct": 6.326160579919815,
+      "realized_return_pct": -1.0066574830391057
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-08-07",
+      "status": "resolved",
+      "absolute_error": 110.76236381375975,
+      "error_pct": -20.321044645122843,
+      "direction_match": false,
+      "predicted_return_pct": 20.717214047908783,
+      "realized_return_pct": -3.813784913115266
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 17.97107538700584,
+      "error_pct": -5.54832236104952,
+      "direction_match": true,
+      "predicted_return_pct": 6.10661655664444,
+      "realized_return_pct": 0.21947942367906456
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 1.3112759618570635,
+      "error_pct": 0.5017534226157309,
+      "direction_match": true,
+      "predicted_return_pct": -1.4299727976322174,
+      "realized_return_pct": -0.9353943124710801
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 2.9294680013764776,
+      "error_pct": 1.2806947676611715,
+      "direction_match": false,
+      "predicted_return_pct": -0.6900845095515251,
+      "realized_return_pct": 0.5817723819033798
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 22.836712574597527,
+      "error_pct": 12.890205926108308,
+      "direction_match": false,
+      "predicted_return_pct": -10.387814790010452,
+      "realized_return_pct": 1.1633804184427745
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 56.83648622876717,
+      "error_pct": -14.195759983585882,
+      "direction_match": false,
+      "predicted_return_pct": 16.40881896018982,
+      "realized_return_pct": -0.11629757912574247
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 32.67339402315042,
+      "error_pct": -3.2532419106309876,
+      "direction_match": true,
+      "predicted_return_pct": 5.7382214814424515,
+      "realized_return_pct": 2.2983013446523475
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 14.63723240536649,
+      "error_pct": -6.104003801464901,
+      "direction_match": false,
+      "predicted_return_pct": 6.4346350729465485,
+      "realized_return_pct": -0.06213909798140378
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 5.785603657736317,
+      "error_pct": 16.98930021740658,
+      "direction_match": false,
+      "predicted_return_pct": -13.037802278995514,
+      "realized_return_pct": 1.736466567480641
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 759.8617964376645,
+      "error_pct": 86.2256292831833,
+      "direction_match": false,
+      "predicted_return_pct": -42.3308402299881,
+      "realized_return_pct": 7.3947556840290405
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 65.72457178527611,
+      "error_pct": 7.240658202512649,
+      "direction_match": false,
+      "predicted_return_pct": -1.4819849282503128,
+      "realized_return_pct": 5.65136781099498
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 29.477508923132064,
+      "error_pct": -7.929443799011973,
+      "direction_match": true,
+      "predicted_return_pct": 9.35036689043045,
+      "realized_return_pct": 0.679491003840371
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 3.275002690911151,
+      "error_pct": -1.1022677083339298,
+      "direction_match": true,
+      "predicted_return_pct": 3.499143570661545,
+      "realized_return_pct": 2.35830593267997
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-08-14",
+      "status": "resolved",
+      "absolute_error": 72.62865216496266,
+      "error_pct": -12.491412904981361,
+      "direction_match": true,
+      "predicted_return_pct": 19.31881010532379,
+      "realized_return_pct": 4.414204861757171
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 33.29987535106147,
+      "error_pct": -9.7183385004252,
+      "direction_match": false,
+      "predicted_return_pct": 10.070637613534927,
+      "realized_return_pct": -0.626399539324739
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 8.525921018680265,
+      "error_pct": -3.191365113803985,
+      "direction_match": false,
+      "predicted_return_pct": 2.7088312432169914,
+      "realized_return_pct": -0.5689825658748435
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 1.4809585800861669,
+      "error_pct": -0.6866431838909636,
+      "direction_match": false,
+      "predicted_return_pct": 0.27008340694009597,
+      "realized_return_pct": -0.4184142862554422
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 1.3665122880998979,
+      "error_pct": 0.6701760106220773,
+      "direction_match": true,
+      "predicted_return_pct": -0.9070866741240093,
+      "realized_return_pct": -0.24298974078746088
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 71.96278604134477,
+      "error_pct": -17.39438288333518,
+      "direction_match": true,
+      "predicted_return_pct": 22.32784479856491,
+      "realized_return_pct": 1.0496711013705118
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 57.46719976428676,
+      "error_pct": -5.610676615348224,
+      "direction_match": false,
+      "predicted_return_pct": 5.123234540224075,
+      "realized_return_pct": -0.774890197421944
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 30.895730750777147,
+      "error_pct": -12.578889187100039,
+      "direction_match": false,
+      "predicted_return_pct": 13.26526403427124,
+      "realized_return_pct": -0.9822480160760152
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 6.151780933141708,
+      "error_pct": 19.788140928157773,
+      "direction_match": false,
+      "predicted_return_pct": -14.826792478561401,
+      "realized_return_pct": 2.027401858813142
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 816.2996467512421,
+      "error_pct": 104.68328540899145,
+      "direction_match": true,
+      "predicted_return_pct": -51.28260850906372,
+      "realized_return_pct": -0.28364253079117674
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 64.7203884984392,
+      "error_pct": 8.241699841752553,
+      "direction_match": true,
+      "predicted_return_pct": -7.640240341424942,
+      "realized_return_pct": -0.02822617580112233
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 7.715516003652738,
+      "error_pct": -2.082036177630919,
+      "direction_match": true,
+      "predicted_return_pct": 7.372727990150452,
+      "realized_return_pct": 5.137188948486279
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 12.947303959706005,
+      "error_pct": -4.709869175970019,
+      "direction_match": false,
+      "predicted_return_pct": 3.87987419962883,
+      "realized_return_pct": -1.0127319753359205
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-08-21",
+      "status": "resolved",
+      "absolute_error": 95.55924162475549,
+      "error_pct": -17.217904825355728,
+      "direction_match": false,
+      "predicted_return_pct": 18.324114382267,
+      "realized_return_pct": -2.0488190175167844
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 29.093059161490373,
+      "error_pct": -8.46533050020711,
+      "direction_match": false,
+      "predicted_return_pct": 9.248223155736923,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 28.505441181509013,
+      "error_pct": -10.01014732886293,
+      "direction_match": false,
+      "predicted_return_pct": 11.123640090227127,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 3.745409855828939,
+      "error_pct": 1.8168848691585366,
+      "direction_match": false,
+      "predicted_return_pct": -1.7844632267951965,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 1.118791706596454,
+      "error_pct": 0.5631939982372417,
+      "direction_match": false,
+      "predicted_return_pct": -0.5600398872047698,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 52.19810173207998,
+      "error_pct": -13.387283476320299,
+      "direction_match": false,
+      "predicted_return_pct": 15.456487238407135,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 37.871813949921034,
+      "error_pct": -3.891225653477242,
+      "direction_match": false,
+      "predicted_return_pct": 4.048772528767586,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 25.953256038126028,
+      "error_pct": -10.220503166744084,
+      "direction_match": false,
+      "predicted_return_pct": 11.384005844593048,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 4.74541467650505,
+      "error_pct": 14.075257814489294,
+      "direction_match": false,
+      "predicted_return_pct": -12.33857199549675,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 708.1686655492013,
+      "error_pct": 91.16706062009821,
+      "direction_match": false,
+      "predicted_return_pct": -47.689732909202576,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 107.96302086703236,
+      "error_pct": 14.604656170050436,
+      "direction_match": false,
+      "predicted_return_pct": -12.7435103058815,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 38.18164652949463,
+      "error_pct": -9.715638259457823,
+      "direction_match": false,
+      "predicted_return_pct": 10.76115295290947,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 8.586536953267682,
+      "error_pct": -3.0901659066753835,
+      "direction_match": false,
+      "predicted_return_pct": 3.188702091574669,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-08-28",
+      "status": "resolved",
+      "absolute_error": 63.40150326490402,
+      "error_pct": -12.067248165625708,
+      "direction_match": false,
+      "predicted_return_pct": 13.72326910495758,
+      "realized_return_pct": 0.0
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 46.30628611261477,
+      "error_pct": -12.64244716734153,
+      "direction_match": false,
+      "predicted_return_pct": 11.598152667284012,
+      "realized_return_pct": -2.5105848234065116
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 27.18727573386718,
+      "error_pct": -9.516112722714514,
+      "direction_match": false,
+      "predicted_return_pct": 10.350441187620163,
+      "realized_return_pct": -0.1506311858065558
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 2.8932668370958368,
+      "error_pct": 1.3819793580961808,
+      "direction_match": false,
+      "predicted_return_pct": -0.547841610386971,
+      "realized_return_pct": 0.8265666897386
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 14.915923452930429,
+      "error_pct": -6.67331562566041,
+      "direction_match": false,
+      "predicted_return_pct": 5.771305039525032,
+      "realized_return_pct": -1.2871479871425282
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 20.196887386959702,
+      "error_pct": -5.681152248303965,
+      "direction_match": false,
+      "predicted_return_pct": 4.844549670815468,
+      "realized_return_pct": -1.111828820032233
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 6.404837917033319,
+      "error_pct": 0.6340261159207765,
+      "direction_match": true,
+      "predicted_return_pct": 5.429700389504433,
+      "realized_return_pct": 6.09815222391092
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 15.011798045113778,
+      "error_pct": -6.117980194697248,
+      "direction_match": true,
+      "predicted_return_pct": 7.407223433256149,
+      "realized_return_pct": 0.8360707759353164
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 4.646737784375233,
+      "error_pct": 13.297950647568324,
+      "direction_match": false,
+      "predicted_return_pct": -7.728377729654312,
+      "realized_return_pct": 4.541857061566919
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 778.4684651256102,
+      "error_pct": 80.9613035964864,
+      "direction_match": false,
+      "predicted_return_pct": -38.16477656364441,
+      "realized_return_pct": 11.897826412229154
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 82.33916089590275,
+      "error_pct": 10.736050755461132,
+      "direction_match": false,
+      "predicted_return_pct": -3.9655297994613647,
+      "realized_return_pct": 6.344779664006659
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 45.04285660342521,
+      "error_pct": -11.285461950770301,
+      "direction_match": false,
+      "predicted_return_pct": 6.046750769019127,
+      "realized_return_pct": -5.9211149390467375
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 2.714971906139226,
+      "error_pct": 0.9772588389823869,
+      "direction_match": true,
+      "predicted_return_pct": 3.3422760665416718,
+      "realized_return_pct": 4.35219759380753
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-09-04",
+      "status": "resolved",
+      "absolute_error": 22.048551664967817,
+      "error_pct": -4.504222035520365,
+      "direction_match": true,
+      "predicted_return_pct": 10.856384038925171,
+      "realized_return_pct": 5.863166361262823
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 25.918980382154132,
+      "error_pct": -7.236119087048627,
+      "direction_match": true,
+      "predicted_return_pct": 9.68213900923729,
+      "realized_return_pct": 1.7454088133066616
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 8.355943585650152,
+      "error_pct": -3.151569534902436,
+      "direction_match": true,
+      "predicted_return_pct": 5.258622020483017,
+      "realized_return_pct": 1.941323356027367
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 6.0839419906429555,
+      "error_pct": 2.976982646117634,
+      "direction_match": false,
+      "predicted_return_pct": -0.21188871469348147,
+      "realized_return_pct": 2.758786041158646
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 12.714022564790014,
+      "error_pct": 6.314515383374948,
+      "direction_match": false,
+      "predicted_return_pct": -5.3647395223379135,
+      "realized_return_pct": 0.6110185586210116
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 15.002510822365139,
+      "error_pct": 4.681737494453446,
+      "direction_match": false,
+      "predicted_return_pct": -3.009326197206974,
+      "realized_return_pct": 1.5315225443414229
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 9.934158309745271,
+      "error_pct": 1.029098961222558,
+      "direction_match": true,
+      "predicted_return_pct": -1.2363411486148834,
+      "realized_return_pct": -0.21996536130988825
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 13.80750795627955,
+      "error_pct": -5.949011894728849,
+      "direction_match": false,
+      "predicted_return_pct": 6.291216611862183,
+      "realized_return_pct": -0.032060507429505496
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 6.306159840179021,
+      "error_pct": 18.660679269046398,
+      "direction_match": false,
+      "predicted_return_pct": -9.593799710273743,
+      "realized_return_pct": 7.276611365123769
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 646.2683684401345,
+      "error_pct": 65.47263810424475,
+      "direction_match": true,
+      "predicted_return_pct": -41.682177782058716,
+      "realized_return_pct": -3.499961091029178
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 88.95595738034444,
+      "error_pct": -9.678320835143534,
+      "direction_match": false,
+      "predicted_return_pct": 6.586332619190216,
+      "realized_return_pct": -3.729434618108259
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 22.25453042333811,
+      "error_pct": -5.740222916969037,
+      "direction_match": true,
+      "predicted_return_pct": 6.638391315937042,
+      "realized_return_pct": 0.5171099393325048
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 8.25223840265241,
+      "error_pct": 3.31671264218102,
+      "direction_match": true,
+      "predicted_return_pct": 0.2731448272243142,
+      "realized_return_pct": 3.598916898421346
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-09-11",
+      "status": "resolved",
+      "absolute_error": 60.06054597222828,
+      "error_pct": -11.8406439146825,
+      "direction_match": false,
+      "predicted_return_pct": 10.047197341918945,
+      "realized_return_pct": -2.9830994334256236
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 0.0976335636805743,
+      "error_pct": 0.029054809004651256,
+      "direction_match": true,
+      "predicted_return_pct": -0.28713017236441374,
+      "realized_return_pct": -0.25815878848293766
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 22.928028629401524,
+      "error_pct": -8.288096971535776,
+      "direction_match": true,
+      "predicted_return_pct": 10.13098955154419,
+      "realized_return_pct": 1.0032263418002734
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 0.7134873643517494,
+      "error_pct": 0.36128410282559914,
+      "direction_match": true,
+      "predicted_return_pct": 0.24695917963981628,
+      "realized_return_pct": 0.6091355067219225
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 12.797689643911326,
+      "error_pct": 6.505790094233893,
+      "direction_match": true,
+      "predicted_return_pct": -7.022593915462494,
+      "realized_return_pct": -0.9736790405390319
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 3.0715627758381743,
+      "error_pct": 0.8998584419214515,
+      "direction_match": false,
+      "predicted_return_pct": -0.6813174579292454,
+      "realized_return_pct": 0.21241009133074507
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 68.84457230754197,
+      "error_pct": 7.2700964777999575,
+      "direction_match": false,
+      "predicted_return_pct": -3.1247656792402267,
+      "realized_return_pct": 3.9181573189737855
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 17.139665281517637,
+      "error_pct": -7.159136601896206,
+      "direction_match": true,
+      "predicted_return_pct": 9.150028973817825,
+      "realized_return_pct": 1.3358292985729199
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 1.3755814293579007,
+      "error_pct": -3.399386282320561,
+      "direction_match": false,
+      "predicted_return_pct": 0.2864513313397721,
+      "realized_return_pct": -3.122672538243878
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 859.2765342887105,
+      "error_pct": 92.14332793853744,
+      "direction_match": false,
+      "predicted_return_pct": -42.23555624485016,
+      "realized_return_pct": 10.990524596329564
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 4.672824749455685,
+      "error_pct": 0.5470941230395096,
+      "direction_match": true,
+      "predicted_return_pct": 6.348554790019989,
+      "realized_return_pct": 6.93038148321364
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 9.12397054833275,
+      "error_pct": -2.443523874632378,
+      "direction_match": false,
+      "predicted_return_pct": 1.9644858315587044,
+      "realized_return_pct": -0.5270407233815809
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 4.784515653305164,
+      "error_pct": 1.956013242312394,
+      "direction_match": true,
+      "predicted_return_pct": 1.2901064939796865,
+      "realized_return_pct": 3.271354390154255
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-09-18",
+      "status": "resolved",
+      "absolute_error": 8.808851095249565,
+      "error_pct": 2.036487804012966,
+      "direction_match": true,
+      "predicted_return_pct": 2.048066444694996,
+      "realized_return_pct": 4.1262628720722585
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 9.235697102845847,
+      "error_pct": 2.783225488854525,
+      "direction_match": false,
+      "predicted_return_pct": -1.2162726372480392,
+      "realized_return_pct": 1.5331012415526353
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 19.362052303587916,
+      "error_pct": -7.1969314695331,
+      "direction_match": true,
+      "predicted_return_pct": 7.880361378192902,
+      "realized_return_pct": 0.11628570071970479
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 1.3722832046404108,
+      "error_pct": -0.6880602910253091,
+      "direction_match": true,
+      "predicted_return_pct": 1.342625729739666,
+      "realized_return_pct": 0.6453273642109295
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 3.7710031708567158,
+      "error_pct": 1.8791220246200329,
+      "direction_match": true,
+      "predicted_return_pct": -2.4172138422727585,
+      "realized_return_pct": -0.5835142153450371
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 19.253222154768082,
+      "error_pct": -5.343171733403329,
+      "direction_match": true,
+      "predicted_return_pct": 6.2898434698581696,
+      "realized_return_pct": 0.6105945980980638
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 1.0258801399509139,
+      "error_pct": -0.09469902554895451,
+      "direction_match": true,
+      "predicted_return_pct": 0.25689986068755916,
+      "realized_return_pct": 0.1619575534738969
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 17.73890731802635,
+      "error_pct": -7.305706771171426,
+      "direction_match": true,
+      "predicted_return_pct": 8.116890490055084,
+      "realized_return_pct": 0.21818750074313387
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 1.2263328963202014,
+      "error_pct": 2.917501683268887,
+      "direction_match": true,
+      "predicted_return_pct": 1.2615445069968785,
+      "realized_return_pct": 4.215851772492585
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 585.9952155116152,
+      "error_pct": 49.16872285883669,
+      "direction_match": false,
+      "predicted_return_pct": -32.03745186328888,
+      "realized_return_pct": 1.37886507785409
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 8.737248390998161,
+      "error_pct": 0.9621537239545764,
+      "direction_match": true,
+      "predicted_return_pct": 0.2398430136963678,
+      "realized_return_pct": 1.2043043961388686
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 29.960269978056203,
+      "error_pct": -7.451501219232112,
+      "direction_match": false,
+      "predicted_return_pct": 6.3846781849861145,
+      "realized_return_pct": -1.5425774070442844
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 6.524176927705014,
+      "error_pct": 2.6439809519991373,
+      "direction_match": true,
+      "predicted_return_pct": 0.5934850312769355,
+      "realized_return_pct": 3.253157614456001
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-09-25",
+      "status": "resolved",
+      "absolute_error": 28.931142683830785,
+      "error_pct": -5.956082424764717,
+      "direction_match": true,
+      "predicted_return_pct": 7.868167012929916,
+      "realized_return_pct": 1.4434500755569453
+    },
+    {
+      "symbol": "000660.KS",
+      "target_week_end_date": "2026-10-02",
+      "status": "resolved",
+      "absolute_error": 85016.02055504918,
+      "error_pct": -4.414086884414846,
+      "direction_match": true,
+      "predicted_return_pct": 5.074523761868477,
+      "realized_return_pct": 0.436442989634479
+    },
+    {
+      "symbol": "000660.KS",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 178775.05853772163,
+      "error_pct": -12.322727598992103,
+      "direction_match": true,
+      "predicted_return_pct": 14.958404004573822,
+      "realized_return_pct": 0.7923930269413629
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 1.051637120777741,
+      "error_pct": 0.3071295158152029,
+      "direction_match": true,
+      "predicted_return_pct": 0.11940185213461518,
+      "realized_return_pct": 0.4268980862801535
+    },
+    {
+      "symbol": "ALAB",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 66.74082985820223,
+      "error_pct": 30.464250701577996,
+      "direction_match": true,
+      "predicted_return_pct": -27.45242416858673,
+      "realized_return_pct": -5.351348789387588
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 9.359311180930547,
+      "error_pct": -3.608627405091093,
+      "direction_match": false,
+      "predicted_return_pct": 1.8053527921438217,
+      "realized_return_pct": -1.8684230685631507
+    },
+    {
+      "symbol": "AVGO",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 31.946374083142928,
+      "error_pct": -8.856860334220903,
+      "direction_match": false,
+      "predicted_return_pct": 4.753111302852631,
+      "realized_return_pct": -4.524725460991997
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 2.5071787554233538,
+      "error_pct": 1.3357170921145771,
+      "direction_match": false,
+      "predicted_return_pct": -0.5442525260150508,
+      "realized_return_pct": 0.784194892085278
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 13.725165066222416,
+      "error_pct": -5.749599002886971,
+      "direction_match": true,
+      "predicted_return_pct": 8.84331688284874,
+      "realized_return_pct": 2.5852626206433627
+    },
+    {
+      "symbol": "DELL",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 17.74839282247285,
+      "error_pct": 4.089853313840969,
+      "direction_match": true,
+      "predicted_return_pct": -8.32894966006279,
+      "realized_return_pct": -4.579738169902045
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 42.61319390875201,
+      "error_pct": -11.228086762943029,
+      "direction_match": false,
+      "predicted_return_pct": 10.035427659749985,
+      "realized_return_pct": -2.3194456278621565
+    },
+    {
+      "symbol": "MRNA",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 17.23324725800194,
+      "error_pct": -7.325714068856967,
+      "direction_match": true,
+      "predicted_return_pct": -0.531398830935359,
+      "realized_return_pct": -7.818184140872754
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 49.79114200403478,
+      "error_pct": -5.361778031334623,
+      "direction_match": true,
+      "predicted_return_pct": -0.28014490380883217,
+      "realized_return_pct": -5.626902187235129
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 22.522466399214295,
+      "error_pct": -9.517105939017855,
+      "direction_match": false,
+      "predicted_return_pct": 8.94097313284874,
+      "realized_return_pct": -1.4270546912014532
+    },
+    {
+      "symbol": "RKLB",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 2.8926548808813095,
+      "error_pct": -5.383420713306502,
+      "direction_match": true,
+      "predicted_return_pct": -2.746325731277466,
+      "realized_return_pct": -7.98190017631151
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 0.370424505746314,
+      "error_pct": -1.157561254834096,
+      "direction_match": true,
+      "predicted_return_pct": -8.804720640182495,
+      "realized_return_pct": -9.860361860289458
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 250.78068254348364,
+      "error_pct": 23.91760139177098,
+      "direction_match": true,
+      "predicted_return_pct": -24.82815831899643,
+      "realized_return_pct": -6.848856866880842
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 185.04758205439975,
+      "error_pct": -22.45566133863304,
+      "direction_match": false,
+      "predicted_return_pct": 19.288602471351624,
+      "realized_return_pct": -7.498442115203338
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 39.02760010559132,
+      "error_pct": -9.911831836976592,
+      "direction_match": false,
+      "predicted_return_pct": 8.638008683919907,
+      "realized_return_pct": -2.1300080478702617
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 29.85668094456196,
+      "error_pct": -12.636321560207309,
+      "direction_match": false,
+      "predicted_return_pct": 10.024064779281616,
+      "realized_return_pct": -3.878929839839203
+    },
+    {
+      "symbol": "VST",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 10.96717285625732,
+      "error_pct": 7.77522347204542,
+      "direction_match": true,
+      "predicted_return_pct": -8.508248627185822,
+      "realized_return_pct": -1.3945604994613352
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-10-16",
+      "status": "resolved",
+      "absolute_error": 35.56633647527906,
+      "error_pct": -9.676168067058857,
+      "direction_match": false,
+      "predicted_return_pct": 3.118620812892914,
+      "realized_return_pct": -6.859310245395737
+    },
+    {
+      "symbol": "000660.KS",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 222610.9987050295,
+      "error_pct": -14.84458295499716,
+      "direction_match": true,
+      "predicted_return_pct": 22.617416083812714,
+      "realized_return_pct": 4.415372035977105
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 10.808826781362939,
+      "error_pct": -3.014687850459963,
+      "direction_match": false,
+      "predicted_return_pct": 2.9633095487952232,
+      "realized_return_pct": -0.14071283460378897
+    },
+    {
+      "symbol": "ALAB",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 39.298209861191935,
+      "error_pct": 18.038137470355505,
+      "direction_match": true,
+      "predicted_return_pct": -15.498492121696472,
+      "realized_return_pct": -0.2559939660847944
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 4.3741170801185945,
+      "error_pct": -1.7331876702435332,
+      "direction_match": false,
+      "predicted_return_pct": 0.7964342832565308,
+      "realized_return_pct": -0.9505570877859972
+    },
+    {
+      "symbol": "AVGO",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 49.70841820449277,
+      "error_pct": -13.384482861668367,
+      "direction_match": false,
+      "predicted_return_pct": 14.895564317703247,
+      "realized_return_pct": -0.4826127972168995
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 1.3800701091505516,
+      "error_pct": 0.7381240742319901,
+      "direction_match": false,
+      "predicted_return_pct": -0.3092866158112827,
+      "realized_return_pct": 0.4265545394510269
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 19.754040516849955,
+      "error_pct": 9.254386686300077,
+      "direction_match": false,
+      "predicted_return_pct": -5.833786353468895,
+      "realized_return_pct": 2.8807191852285654
+    },
+    {
+      "symbol": "DELL",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 16.04315837420404,
+      "error_pct": -3.3954984441159777,
+      "direction_match": true,
+      "predicted_return_pct": 4.312429204583168,
+      "realized_return_pct": 0.7705022939219658
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 65.55845723383754,
+      "error_pct": -17.124313454965026,
+      "direction_match": false,
+      "predicted_return_pct": 19.35354918241501,
+      "realized_return_pct": -1.0849266992075857
+    },
+    {
+      "symbol": "MRNA",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 17.74847051170491,
+      "error_pct": 9.733107239323944,
+      "direction_match": true,
+      "predicted_return_pct": -10.00763401389122,
+      "realized_return_pct": -1.248580525258367
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 65.05617482508023,
+      "error_pct": -6.901734510666622,
+      "direction_match": true,
+      "predicted_return_pct": 10.054545104503632,
+      "realized_return_pct": 2.45887258446894
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 31.347592895069738,
+      "error_pct": -12.937106779012291,
+      "direction_match": false,
+      "predicted_return_pct": 14.182928204536438,
+      "realized_return_pct": -0.5890391406873825
+    },
+    {
+      "symbol": "RKLB",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 2.0561433596265033,
+      "error_pct": -3.7619621338821454,
+      "direction_match": true,
+      "predicted_return_pct": 6.708591431379318,
+      "realized_return_pct": 2.6942546281318203
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 3.3777470787019865,
+      "error_pct": -9.300541685875444,
+      "direction_match": false,
+      "predicted_return_pct": 7.7038682997226715,
+      "realized_return_pct": -2.3131748687934244
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 10.72164081785104,
+      "error_pct": -0.8585887069817503,
+      "direction_match": true,
+      "predicted_return_pct": -0.9658254683017731,
+      "realized_return_pct": -1.816121706883531
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 120.21289883400277,
+      "error_pct": -16.01337900579908,
+      "direction_match": false,
+      "predicted_return_pct": 16.906417906284332,
+      "realized_return_pct": -1.8142498751523406
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 49.50590276959474,
+      "error_pct": -11.738881178788976,
+      "direction_match": false,
+      "predicted_return_pct": 12.586341798305511,
+      "realized_return_pct": -0.6300350889427995
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 27.428476458366276,
+      "error_pct": -12.369183315480404,
+      "direction_match": false,
+      "predicted_return_pct": 13.374143838882446,
+      "realized_return_pct": -0.6493118449053555
+    },
+    {
+      "symbol": "VST",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 10.522304710235403,
+      "error_pct": 8.11670123375273,
+      "direction_match": true,
+      "predicted_return_pct": -7.947385311126709,
+      "realized_return_pct": -0.4757495989732849
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-10-23",
+      "status": "resolved",
+      "absolute_error": 34.4896819961491,
+      "error_pct": -9.120401357815043,
+      "direction_match": false,
+      "predicted_return_pct": 6.76746740937233,
+      "realized_return_pct": -2.9701541379367984
+    },
+    {
+      "symbol": "000660.KS",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 466806.0334920883,
+      "error_pct": -24.76679431183749,
+      "direction_match": false,
+      "predicted_return_pct": 23.51284623146057,
+      "realized_return_pct": -7.077326343381389
+    },
+    {
+      "symbol": "AAPL",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 13.401923931336626,
+      "error_pct": -3.743220325551868,
+      "direction_match": false,
+      "predicted_return_pct": 2.6144063100218773,
+      "realized_return_pct": -1.2266770039192403
+    },
+    {
+      "symbol": "ALAB",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 17.51040420377558,
+      "error_pct": 7.26001603001868,
+      "direction_match": true,
+      "predicted_return_pct": -16.95430427789688,
+      "realized_return_pct": -10.925173456231658
+    },
+    {
+      "symbol": "AMZN",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 22.15729255933536,
+      "error_pct": -8.440638668791031,
+      "direction_match": false,
+      "predicted_return_pct": 7.677634805440903,
+      "realized_return_pct": -1.4110452755867318
+    },
+    {
+      "symbol": "AVGO",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 94.24571786820889,
+      "error_pct": -22.422068617874817,
+      "direction_match": false,
+      "predicted_return_pct": 21.83353751897812,
+      "realized_return_pct": -5.484061863111413
+    },
+    {
+      "symbol": "BA",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 6.099038533625901,
+      "error_pct": -3.433195292919445,
+      "direction_match": false,
+      "predicted_return_pct": 2.895480953156948,
+      "realized_return_pct": -0.6371218555536603
+    },
+    {
+      "symbol": "CVX",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 11.049480105669886,
+      "error_pct": -4.481284508315217,
+      "direction_match": true,
+      "predicted_return_pct": 6.527899950742722,
+      "realized_return_pct": 1.754081673216554
+    },
+    {
+      "symbol": "DELL",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 49.12112723982568,
+      "error_pct": -10.375778705270255,
+      "direction_match": true,
+      "predicted_return_pct": -0.4392956383526325,
+      "realized_return_pct": -10.769494000325514
+    },
+    {
+      "symbol": "GOOG",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 57.01823037580834,
+      "error_pct": -17.00827202919826,
+      "direction_match": false,
+      "predicted_return_pct": 18.744057416915894,
+      "realized_return_pct": -1.4522548870605343
+    },
+    {
+      "symbol": "MRNA",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 19.508231347430524,
+      "error_pct": 9.647426240152319,
+      "direction_match": true,
+      "predicted_return_pct": -9.224378317594528,
+      "realized_return_pct": -0.4668671717447442
+    },
+    {
+      "symbol": "MU",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 139.77522624229096,
+      "error_pct": -13.643060053610675,
+      "direction_match": false,
+      "predicted_return_pct": 9.659434109926224,
+      "realized_return_pct": -5.301468340140641
+    },
+    {
+      "symbol": "NVDA",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 40.92572634695762,
+      "error_pct": -16.665895138336438,
+      "direction_match": false,
+      "predicted_return_pct": 14.932940900325775,
+      "realized_return_pct": -4.221662509528708
+    },
+    {
+      "symbol": "RKLB",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 8.427100210196329,
+      "error_pct": -13.343076618827382,
+      "direction_match": false,
+      "predicted_return_pct": 6.86480775475502,
+      "realized_return_pct": -7.39424542252453
+    },
+    {
+      "symbol": "SMCI",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 2.626221923408025,
+      "error_pct": -7.381958299962656,
+      "direction_match": false,
+      "predicted_return_pct": 3.329138457775116,
+      "realized_return_pct": -4.298575454888518
+    },
+    {
+      "symbol": "SNDK",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 220.21404877295208,
+      "error_pct": -16.061074767982245,
+      "direction_match": false,
+      "predicted_return_pct": 3.086651861667633,
+      "realized_return_pct": -13.470172369644368
+    },
+    {
+      "symbol": "STX",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 212.88287823441715,
+      "error_pct": -24.82706591681879,
+      "direction_match": false,
+      "predicted_return_pct": 22.412513196468353,
+      "realized_return_pct": -7.978922145253343
+    },
+    {
+      "symbol": "TSLA",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 42.53755988158173,
+      "error_pct": -9.616320733800965,
+      "direction_match": false,
+      "predicted_return_pct": 9.68201607465744,
+      "realized_return_pct": -0.8653583783807508
+    },
+    {
+      "symbol": "VRT",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 34.78752620880584,
+      "error_pct": -13.015020454650667,
+      "direction_match": false,
+      "predicted_return_pct": 8.68881270289421,
+      "realized_return_pct": -5.457058502304423
+    },
+    {
+      "symbol": "VST",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 14.205972502902455,
+      "error_pct": 11.441295315498309,
+      "direction_match": true,
+      "predicted_return_pct": -11.909169703722,
+      "realized_return_pct": -1.830437663650381
+    },
+    {
+      "symbol": "WDC",
+      "target_week_end_date": "2026-10-30",
+      "status": "resolved",
+      "absolute_error": 52.3172575361051,
+      "error_pct": -12.503310533762345,
+      "direction_match": false,
+      "predicted_return_pct": 5.82110695540905,
+      "realized_return_pct": -7.410034657490529
+    }
+  ]
+}

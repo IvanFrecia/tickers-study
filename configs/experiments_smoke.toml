@@ -1,0 +1,16 @@
+[base]
+config = "configs/smoke.toml"
+artifact_root = "artifacts/experiments-smoke"
+
+[[experiments]]
+name = "smoke_features"
+description = "Quick experiment adding RSI and ATR to the smoke configuration."
+tickers = ["AAPL"]
+score_metric = "MAE"
+[experiments.overrides.defaults.features]
+engineered = [
+  "Daily_Return",
+  "SMA_5",
+  "RSI_14",
+  "ATR_14"
+]

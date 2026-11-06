@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tickers local login</title>
+</head>
+<body>
+  <h1>Local study login</h1>
+  <p>This page is used only when <code>TICKERS_AUTH_ENFORCED</code> is on. There is no built-in password.</p>
+  <form id="login">
+    <label>Email <input id="email" type="email" autocomplete="username" required></label>
+    <label>Password <input id="password" type="password" autocomplete="current-password" required>
+      <button type="button" id="toggle">Show</button>
+    </label>
+    <button type="submit">Sign in</button>
+    <p id="error" role="alert"></p>
+  </form>
+  <script>
+    const password = document.getElementById("password");
+    document.getElementById("toggle").addEventListener("click", () => {
+      const show = password.type === "password";
+      password.type = show ? "text" : "password";
+      document.getElementById("toggle").textContent = show ? "Hide" : "Show";
+    });
+    document.getElementById("login").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const response = await fetch("/auth/test-login", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          email: document.getElementById("email").value,
+          password: password.value,
+        }),
+      });
+      if (response.ok) {
+        window.location.assign("/dashboard");
+        return;
+      }
+      document.getElementById("error").textContent = "Login was refused. Check the local account you configured.";
+    });
+  </script>
+</body>
+</html>

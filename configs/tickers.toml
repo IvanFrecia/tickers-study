@@ -1,0 +1,189 @@
+[pipeline]
+seed = 42
+artifact_root = "artifacts"
+data_source = "yfinance"
+log_level = "INFO"
+
+[defaults]
+start_date = "2010-01-01"
+end_date = ""
+window_size = 60
+forecast_horizon = 5
+output_dir = "artifacts"
+
+[defaults.features]
+raw = ["Open", "High", "Low", "Close", "Volume"]
+engineered = ["Daily_Return", "Log_Return", "SMA_10", "SMA_30", "EMA_10", "Volatility_14"]
+target = "Daily_Return"
+
+[defaults.model]
+type = "lstm"
+lstm_units = [128, 64]
+dropout = 0.2
+learning_rate = 0.001
+epochs = 40
+batch_size = 64
+early_stopping_patience = 10
+loss = "weighted_mse"
+metrics = ["mae", "mse"]
+
+[defaults.backtest]
+splits = 3
+step = 60
+val_ratio = 0.15
+test_ratio = 0.15
+min_train_points = 500
+
+[tickers.AAPL]
+
+[tickers.AMZN]
+
+[tickers.BA]
+
+[tickers.CVX]
+
+[tickers.NVDA]
+
+[tickers.GOOG]
+window_size = 90
+forecast_horizon = 3
+
+[tickers.GOOG.features]
+engineered = [
+  "Daily_Return",
+  "Log_Return",
+  "SMA_10",
+  "SMA_30",
+  "EMA_10",
+  "Volatility_14",
+  "High_Low_Range",
+  "True_Range",
+  "ATR_14",
+  "RSI_7",
+  "RSI_14",
+  "Return_5",
+  "Return_10",
+  "Volume_Z_30",
+  "Volume_Z_60"
+]
+
+[tickers.GOOG.model]
+lstm_units = [160, 80]
+dropout = 0.30
+learning_rate = 0.0006
+epochs = 60
+
+[tickers.GOOG.backtest]
+step = 45
+min_train_points = 700
+splits = 2
+
+[tickers.TSLA]
+window_size = 80
+forecast_horizon = 2
+start_date = "2018-01-01"
+
+[tickers.TSLA.features]
+engineered = [
+  "Daily_Return",
+  "Log_Return",
+  "SMA_10",
+  "SMA_30",
+  "EMA_10",
+  "Volatility_14",
+  "High_Low_Range",
+  "True_Range",
+  "ATR_14",
+  "RSI_7",
+  "RSI_14",
+  "MACD_12_26_9",
+  "MACD_SIGNAL_12_26_9",
+  "MACD_HIST_12_26_9",
+  "Return_5",
+  "Return_10",
+  "Return_20",
+  "Volume_Z_20",
+  "Volume_Z_60",
+  "Volatility_28",
+  "Vol_Regime_28"
+]
+
+[tickers.TSLA.model]
+lstm_units = [192, 96]
+dropout = 0.3
+learning_rate = 0.0004
+epochs = 80
+loss = "mse"
+
+[tickers.TSLA.backtest]
+step = 50
+min_train_points = 600
+splits = 2
+
+[[tickers.TSLA.macro_sources]]
+symbol = "QQQ"
+feature_name = "QQQ_Return"
+transform = "log_return"
+
+[[tickers.TSLA.macro_sources]]
+symbol = "XLY"
+feature_name = "XLY_Return"
+transform = "log_return"
+
+[[tickers.TSLA.macro_sources]]
+symbol = "^VIX"
+feature_name = "VIX_Return"
+transform = "log_return"
+
+[[tickers.TSLA.macro_sources]]
+symbol = "CL=F"
+feature_name = "CLF_Return"
+transform = "log_return"
+
+[tickers.VRT]
+
+[tickers.SMCI]
+
+[tickers.MU]
+
+[tickers.SNDK]
+window_size = 30
+
+[tickers.SNDK.model]
+type = "seq2seq"
+lstm_units = [96]
+dropout = 0.30
+learning_rate = 0.0003
+epochs = 25
+batch_size = 16
+loss = "mae"
+metrics = ["mae", "mse", "mape"]
+
+[tickers.SNDK.backtest]
+splits = 1
+step = 15
+min_train_points = 80
+
+[tickers.WDC]
+
+[tickers.STX]
+
+[tickers.VST]
+
+[tickers.DELL]
+
+[tickers.MRNA]
+
+[tickers.ALAB]
+window_size = 30
+
+[tickers.ALAB.backtest]
+splits = 1
+step = 15
+min_train_points = 80
+
+[tickers.RKLB]
+
+[tickers.AVGO]
+
+[tickers."000660.KS"]

@@ -1,0 +1,37 @@
+[pipeline]
+seed = 42
+artifact_root = "artifacts-smoke"
+data_source = "yfinance"
+log_level = "INFO"
+
+[defaults]
+start_date = "2020-01-01"
+end_date = ""
+window_size = 30
+forecast_horizon = 3
+output_dir = "artifacts-smoke"
+
+[defaults.features]
+raw = ["Open", "High", "Low", "Close", "Volume"]
+engineered = ["Daily_Return", "SMA_5"]
+target = "Close"
+
+[defaults.model]
+type = "lstm"
+lstm_units = [64]
+dropout = 0.2
+learning_rate = 0.001
+epochs = 2
+batch_size = 64
+early_stopping_patience = 2
+loss = "mse"
+metrics = ["mae"]
+
+[defaults.backtest]
+splits = 1
+step = 15
+val_ratio = 0.2
+test_ratio = 0.2
+min_train_points = 120
+
+[tickers.AAPL]

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tickers Forecast Ops Deck</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#alertsPanel">Skip to alerts</a>
+    <div class="ambient-glow"></div>
+    <aside class="study-disclaimer" role="note">
+      Research dashboard only. Forecasts are not financial advice.
+      Educational study — not an offer to buy or sell securities.
+      <a href="/legal">Legal</a>
+    </aside>
+    <main class="shell" id="mainContent">
+      <header class="hero fade-up">
+        <div class="hero-copy">
+          <p class="eyebrow">Weekly forecast study</p>
+          <h1>Tickers Forecast Ops Deck</h1>
+          <p class="subtitle">
+            Target-week close forecasts with a frozen <strong>initial_forecast</strong>, later <strong>revisions</strong>, and <strong>resolved_actual</strong> when the week completes.
+          </p>
+          <dl class="hero-strip" id="heroStrip">
+            <div>
+              <dt>Target week</dt>
+              <dd id="heroTargetWeek">Loading…</dd>
+            </div>
+            <div>
+              <dt>As of</dt>
+              <dd id="heroAsOf">Loading…</dd>
+            </div>
+            <div>
+              <dt>Market clock</dt>
+              <dd id="heroMarketClock">Loading…</dd>
+            </div>
+            <div>
+              <dt>Cohort</dt>
+              <dd id="heroCohorts">Loading…</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-actions">
+          <div class="user-chip">
+            <strong id="userName">Signed in</strong>
+            <span id="userRole">role</span>
+          </div>
+          <button id="refreshButton" class="refresh-button" type="button">Refresh Data</button>
+          <a id="guideLink" class="guide-link" href="/guide" target="_blank" rel="noreferrer">User Guide</a>
+          <a id="legalLink" class="guide-link" href="/legal">Legal</a>
+          <a id="logoutLink" class="logout-link" href="/auth/logout">Logout</a>
+        </div>
+      </header>
+      <!-- Login checkbox is the acknowledgement gate. Sticky banner + /legal remain visible after sign-in. -->
+
+      <div id="loadBanner" class="load-banner" hidden role="status"></div>
+
+      <section id="summaryCards" class="summary-grid fade-up" aria-label="Portfolio insights"></section>
+
+      <section id="alertsPanel" class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>Failed-ticker alerts</h2>
+            <p>Triage operational failures and quality warnings before opening charts. Severity is labeled in text, not color alone.</p>
+          </div>
+        </div>
+        <div id="alertsSummary" class="alerts-summary"></div>
+        <div id="alertFilters" class="alert-filters" role="group" aria-label="Filter alerts by severity">
+          <button type="button" class="alert-filter" data-severity="all" aria-pressed="true">All</button>
+          <button type="button" class="alert-filter" data-severity="critical" aria-pressed="false">Critical</button>
+          <button type="button" class="alert-filter" data-severity="warning" aria-pressed="false">Warning</button>
+          <button type="button" class="alert-filter" data-severity="info" aria-pressed="false">Info</button>
+        </div>
+        <div id="alertsList" class="alerts-list"></div>
+      </section>
+
+      <section class="panel fade-up">
+        <div class="panel-head">
+          <div>
+            <h2>Watchlist</h2>
+            <p>Compact cards: cohort, projected move, and status. Open a ticker for the forecast cycle story.</p>
+          </div>
+        </div>
+        <div id="tickerGrid" class="ticker-board"></div>
+      </section>
+
+      <section id="tickerDetail" class="panel detail fade-up">
+        <div class="panel-head">
+          <div>
+            <h2 id="detailTitle">Ticker Detail</h2>
+            <p id="detailSubtitle">Select a ticker card to inspect initial_forecast, latest_forecast, revisions, and resolved_actual.</p>
+          </div>
+          <span id="detailStatus" class="status-pill">Unknown</span>
+        </div>
+        <div id="detailNotice" class="detail-notice" hidden></div>
+
+        <div class="detail-tabs" role="tablist" aria-label="Ticker detail sections">
+          <button type="button" class="detail-tab" role="tab" id="tabOverview" aria-controls="panelOverview" aria-selected="true" tabindex="0">Overview</button>
+          <button type="button" class="detail-tab" role="tab" id="tabRevisions" aria-controls="panelRevisions" aria-selected="false" tabindex="-1">Revision timeline</button>
+          <button type="button" class="detail-tab" role="tab" id="tabForecastActual" aria-controls="panelForecastActual" aria-selected="false" tabindex="-1">Forecast vs actual</button>
+          <button type="button" class="detail-tab" role="tab" id="tabHistory" aria-controls="panelHistory" aria-selected="false" tabindex="-1">History</button>
+          <button type="button" class="detail-tab" role="tab" id="tabOps" aria-controls="panelOps" aria-selected="false" tabindex="-1">Ops</button>
+        </div>
+
+        <div id="panelOverview" class="detail-panel" role="tabpanel" aria-labelledby="tabOverview">
+          <div class="detail-grid">
+            <article class="card close-focus-card">
+              <h3>Target Close Truth</h3>
+              <p class="card-lede">Frozen <strong>initial_forecast</strong> is never overwritten. Compare it to <strong>latest_forecast</strong> and <strong>resolved_actual</strong>.</p>
+              <div id="closeFocus" class="close-focus-grid"></div>
+            </article>
+            <article class="card">
+              <h3>Forward Projection (Week Ahead)</h3>
+              <div id="forecastChart" class="chart"></div>
+            </article>
+          </div>
+        </div>
+
+        <div id="panelRevisions" class="detail-panel" role="tabpanel" aria-labelledby="tabRevisions" hidden>
+          <article class="card">
+            <h3>Revision timeline</h3>
+            <p class="card-lede">Each row is a revision of the same target week. The first frozen call remains <strong>initial_forecast</strong>.</p>
+            <div id="cycleMeta" class="week-path-meta"></div>
+            <div class="week-path-wrap">
+              <table class="week-path-table">
+                <thead>
+                  <tr>
+                    <th>Revision</th>
+                    <th>Origin</th>
+                    <th>Target</th>
+                    <th>Predicted Close</th>
+                    <th>Return %</th>
+                    <th>Rule</th>
+                  </tr>
+                </thead>
+                <tbody id="cycleTable"></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <div id="panelForecastActual" class="detail-panel" role="tabpanel" aria-labelledby="tabForecastActual" hidden>
+          <article class="card">
+            <h3>Forecast vs actual</h3>
+            <p class="card-lede">Overlay of frozen <strong>initial_forecast</strong>, <strong>latest_forecast</strong>, and <strong>resolved_actual</strong> across completed weeks.</p>
+            <div id="errorChart" class="chart"></div>
+          </article>
+        </div>
+
+        <div id="panelHistory" class="detail-panel" role="tabpanel" aria-labelledby="tabHistory" hidden>
+          <article class="card">
+            <h3>Resolved Week History</h3>
+            <p class="card-lede">One row per completed target week. <strong>initial_forecast</strong> stays the first call even after later <strong>revisions</strong>.</p>
+            <div id="historyMeta" class="week-path-meta"></div>
+            <div class="week-path-wrap">
+              <table class="week-path-table">
+                <thead>
+                  <tr>
+                    <th>Target week-end</th>
+                    <th>initial_forecast</th>
+                    <th>latest_forecast</th>
+                    <th>resolved_actual</th>
+                    <th>First-call gap</th>
+                    <th>Latest gap</th>
+                    <th>revisions</th>
+                  </tr>
+                </thead>
+                <tbody id="historyTable"></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <div id="panelOps" class="detail-panel" role="tabpanel" aria-labelledby="tabOps" hidden>
+          <details class="ops-disclosure" open>
+            <summary>Ops / provenance</summary>
+            <p class="card-lede">Source feeds, market calendar, live error metrics, and the target-close path. Demoted from the main story.</p>
+            <div class="detail-grid">
+              <article class="card">
+                <h3>Snapshot</h3>
+                <div id="snapshotGrid" class="snapshot-grid"></div>
+              </article>
+              <article class="card">
+                <h3>Target Close Path</h3>
+                <div id="weekPathMeta" class="week-path-meta"></div>
+                <div class="week-path-wrap">
+                  <table class="week-path-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <span class="help-label">Date<button type="button" class="help-dot" aria-expanded="false" aria-controls="tip-path-date" aria-label="About Date">?</button><span id="tip-path-date" class="help-tip" role="tooltip">Forecast business date for the week path row.</span></span>
+                        </th>
+                        <th>
+                          <span class="help-label">Actual Close<button type="button" class="help-dot" aria-expanded="false" aria-controls="tip-path-actual" aria-label="About Actual Close">?</button><span id="tip-path-actual" class="help-tip" role="tooltip">Latest realised close used as the live reference; resolved forecast dates swap in their own realised close automatically.</span></span>
+                        </th>
+                        <th>
+                          <span class="help-label">Predicted Close<button type="button" class="help-dot" aria-expanded="false" aria-controls="tip-path-predicted" aria-label="About Predicted Close">?</button><span id="tip-path-predicted" class="help-tip" role="tooltip">Target-anchored display close for that date. The raw model path stays in the ledger for audit.</span></span>
+                        </th>
+                        <th>
+                          <span class="help-label">Gap<button type="button" class="help-dot" aria-expanded="false" aria-controls="tip-path-gap" aria-label="About Gap">?</button><span id="tip-path-gap" class="help-tip" role="tooltip">Predicted close minus actual close using the live reference close for unresolved rows and realised close for resolved rows.</span></span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="weekPathTable"></tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script type="module" src="/static/app.js"></script>
+  </body>
+</html>
